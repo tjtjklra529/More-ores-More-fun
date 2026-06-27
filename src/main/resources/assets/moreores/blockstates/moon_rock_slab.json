@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "moreores:block/moon_rock_slab"
+    },
+    "type=top": {
+      "model": "moreores:block/moon_rock_slab_top"
+    },
+    "type=double": {
+      "model": "moreores:block/moon_rock"
+    }
+  }
+}

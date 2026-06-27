@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "moreores:titanium_ingot",
+    "moreores:platinum_ingot",
+    "moreores:nickel_ingot",
+    "moreores:aluminum_ingot",
+    "moreores:silver_ingot",
+    "moreores:bronze_ingot",
+    "moreores:steel_ingot",
+    "moreores:tin_ingot",
+    "moreores:copper_alloy_ingot"
+  ]
+}

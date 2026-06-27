@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "B  ",
+    "BB ",
+    "BBB"
+  ],
+  "key": {
+    "B": {
+      "item": "moreores:sapphire_block"
+    }
+  },
+  "result": {
+    "item": "moreores:sapphire_stairs",
+    "count": 4
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "I I",
+    "III",
+    "III"
+  ],
+  "key": {
+    "I": {
+      "item": "moreores:nickel_ingot"
+    }
+  },
+  "result": {
+    "item": "moreores:nickel_chestplate",
+    "count": 1
+  }
+}

@@ -8,6 +8,8 @@ import com.moreores.registry.ModEnchantments;
 import com.moreores.registry.ModFluids;
 import com.moreores.registry.ModItemGroups;
 import com.moreores.registry.ModItems;
+import com.moreores.world.biome.CaveBiomeFeatures;
+import com.moreores.world.biome.CaveBiomeRegistry;
 import com.moreores.world.gen.ModOreGeneration;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
@@ -42,6 +44,12 @@ public class MoreOres implements ModInitializer {
 
         // 7. Register world generation ore features
         ModOreGeneration.generateOres();
+
+        // 8. Register cave biome keys (data-driven via worldgen JSON)
+        CaveBiomeRegistry.register();
+
+        // 9. Add bonus ore features to cave biomes via BiomeModifications
+        CaveBiomeFeatures.register();
 
         LOGGER.info("More Ores, More Fun initialized successfully.");
     }

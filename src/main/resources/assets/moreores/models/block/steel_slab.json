@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "moreores:block/steel_block",
+    "top": "moreores:block/steel_block",
+    "side": "moreores:block/steel_block"
+  }
+}

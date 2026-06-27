@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "moreores:block/petrified_spruce",
+    "top": "moreores:block/petrified_spruce",
+    "side": "moreores:block/petrified_spruce"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BBB"
+  ],
+  "key": {
+    "B": {
+      "item": "moreores:petrified_birch"
+    }
+  },
+  "result": {
+    "item": "moreores:petrified_birch_slab",
+    "count": 6
+  }
+}

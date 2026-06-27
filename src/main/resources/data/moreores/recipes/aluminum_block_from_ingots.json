@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    "III",
+    "III"
+  ],
+  "key": {
+    "I": {
+      "item": "moreores:aluminum_ingot"
+    }
+  },
+  "result": {
+    "item": "moreores:aluminum_block",
+    "count": 1
+  }
+}

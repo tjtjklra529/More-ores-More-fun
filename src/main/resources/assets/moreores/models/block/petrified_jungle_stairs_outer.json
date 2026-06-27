@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "moreores:block/petrified_jungle",
+    "top": "moreores:block/petrified_jungle",
+    "side": "moreores:block/petrified_jungle"
+  }
+}

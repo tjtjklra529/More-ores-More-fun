@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BBB",
+    "BBB"
+  ],
+  "key": {
+    "B": {
+      "item": "moreores:ruby_block"
+    }
+  },
+  "result": {
+    "item": "moreores:ruby_wall",
+    "count": 6
+  }
+}
