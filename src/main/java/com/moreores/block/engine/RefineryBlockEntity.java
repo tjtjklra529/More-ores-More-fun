@@ -1,7 +1,7 @@
 package com.moreores.block.engine;
 
 import com.moreores.registry.ModBlockEntities;
-import com.moreores.screen.OilCrusherScreenHandler;
+import com.moreores.registry.ModItems;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -9,59 +9,44 @@ import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.inventory.SimpleInventory;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
 import net.minecraft.nbt.NbtCompound;
-import net.minecraft.registry.Registries;
 import net.minecraft.screen.NamedScreenHandlerFactory;
 import net.minecraft.screen.ScreenHandler;
 import net.minecraft.text.Text;
-import net.minecraft.util.Identifier;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
-import java.util.HashMap;
-import java.util.Map;
+/**
+ * Converts oil buckets → refined fuel (4 refined fuel per bucket).
+ * Requires adjacent active oil engine.
+ * Processing time: 80 ticks per bucket.
+ */
+public class RefineryBlockEntity extends BlockEntity implements NamedScreenHandlerFactory {
 
-public class OilCrusherBlockEntity extends BlockEntity implements NamedScreenHandlerFactory {
+    public static final int PROCESSING_TICKS = 80;
 
-    public static final int PROCESSING_TICKS = 100;
-
-    // Maps raw ore item name -> output ingot item name
-    private static final Map<String, String> CRUSH_RECIPES = new HashMap<>();
-
-    static {
-        // Original ore materials
-        for (String mat : new String[]{"titanium","platinum","nickel","aluminum","silver","tin",
-                "lead","cobalt","chromium","tungsten","zinc","manganese","vanadium","uranium",
-                "lithium","palladium","osmium","iridium","bismuth","pyrite","magnetite"}) {
-            CRUSH_RECIPES.put("moreores:raw_" + mat, "moreores:" + mat + "_ingot");
-        }
-        // Vanilla raws
-        CRUSH_RECIPES.put("minecraft:raw_iron", "minecraft:iron_ingot");
-        CRUSH_RECIPES.put("minecraft:raw_gold", "minecraft:gold_ingot");
-        CRUSH_RECIPES.put("minecraft:raw_copper", "minecraft:copper_ingot");
-    }
-
-    public SimpleInventory inventory = new SimpleInventory(2); // slot 0 = input, slot 1 = output
+    public SimpleInventory inventory = new SimpleInventory(2); // slot 0 = oil bucket input, slot 1 = refined fuel output
     private int progress = 0;
 
-    public OilCrusherBlockEntity(BlockPos pos, BlockState state) {
-        super(ModBlockEntities.OIL_CRUSHER, pos, state);
+    public RefineryBlockEntity(BlockPos pos, BlockState state) {
+        super(ModBlockEntities.REFINERY, pos, state);
     }
 
     @Override
     public Text getDisplayName() {
-        return Text.translatable("container.moreores.oil_crusher");
+        return Text.translatable("container.moreores.refinery");
     }
 
     @Nullable
     @Override
     public ScreenHandler createMenu(int syncId, PlayerInventory playerInventory, PlayerEntity player) {
-        return new OilCrusherScreenHandler(syncId, playerInventory, this.inventory);
+        return new com.moreores.screen.RefineryScreenHandler(syncId, playerInventory, this.inventory);
     }
 
-    public static void tick(World world, BlockPos pos, BlockState state, OilCrusherBlockEntity be) {
+    public static void tick(World world, BlockPos pos, BlockState state, RefineryBlockEntity be) {
         if (world.isClient) return;
 
         if (!isAdjacentEngineActive(world, pos)) {
@@ -70,24 +55,21 @@ public class OilCrusherBlockEntity extends BlockEntity implements NamedScreenHan
         }
 
         ItemStack input = be.inventory.getStack(0);
-        if (input.isEmpty()) {
+        Item oilBucket = ModItems.ITEMS.get("oil_bucket");
+        if (input.isEmpty() || input.getItem() != oilBucket) {
             be.progress = 0;
             return;
         }
 
-        String inputId = Registries.ITEM.getId(input.getItem()).toString();
-        String outputId = CRUSH_RECIPES.get(inputId);
-        if (outputId == null) {
+        Item refinedFuel = ModItems.ITEMS.get("refined_fuel");
+        if (refinedFuel == null) {
             be.progress = 0;
             return;
         }
 
-        Item outputItem = Registries.ITEM.get(new Identifier(outputId));
         ItemStack outputStack = be.inventory.getStack(1);
-
-        // Check output slot can accept 2 more items
         boolean canOutput = outputStack.isEmpty() ||
-                (outputStack.getItem() == outputItem && outputStack.getCount() + 2 <= outputStack.getMaxCount());
+                (outputStack.getItem() == refinedFuel && outputStack.getCount() + 4 <= outputStack.getMaxCount());
 
         if (!canOutput) {
             be.progress = 0;
@@ -95,16 +77,16 @@ public class OilCrusherBlockEntity extends BlockEntity implements NamedScreenHan
         }
 
         be.progress++;
-
         if (be.progress >= PROCESSING_TICKS) {
             be.progress = 0;
+            // Consume the oil bucket, return empty bucket
             input.decrement(1);
-
-            // Output 2 ingots
+            be.inventory.getStack(0); // may now be empty
+            // Try to give empty bucket back — just drop it
             if (outputStack.isEmpty()) {
-                be.inventory.setStack(1, new ItemStack(outputItem, 2));
+                be.inventory.setStack(1, new ItemStack(refinedFuel, 4));
             } else {
-                outputStack.increment(2);
+                outputStack.increment(4);
             }
             be.markDirty();
         }
@@ -123,19 +105,15 @@ public class OilCrusherBlockEntity extends BlockEntity implements NamedScreenHan
         return false;
     }
 
-    public int getProgress() {
-        return progress;
-    }
+    public int getProgress() { return progress; }
 
     @Override
     public void readNbt(NbtCompound nbt) {
         super.readNbt(nbt);
         progress = nbt.getInt("Progress");
         NbtCompound invNbt = nbt.getCompound("Inventory");
-        ItemStack input = ItemStack.fromNbt(invNbt.getCompound("Input"));
-        ItemStack output = ItemStack.fromNbt(invNbt.getCompound("Output"));
-        inventory.setStack(0, input);
-        inventory.setStack(1, output);
+        inventory.setStack(0, ItemStack.fromNbt(invNbt.getCompound("Input")));
+        inventory.setStack(1, ItemStack.fromNbt(invNbt.getCompound("Output")));
     }
 
     @Override

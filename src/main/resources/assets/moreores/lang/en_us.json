@@ -1,130 +1,100 @@
 {
   "itemGroup.moreores.main": "More Ores, More Fun",
-
   "block.moreores.titanium_ore": "Titanium Ore",
   "block.moreores.deepslate_titanium_ore": "Deepslate Titanium Ore",
   "block.moreores.titanium_block": "Block of Titanium",
-
   "block.moreores.platinum_ore": "Platinum Ore",
   "block.moreores.deepslate_platinum_ore": "Deepslate Platinum Ore",
   "block.moreores.platinum_block": "Block of Platinum",
-
   "block.moreores.nickel_ore": "Nickel Ore",
   "block.moreores.deepslate_nickel_ore": "Deepslate Nickel Ore",
   "block.moreores.nickel_block": "Block of Nickel",
-
   "block.moreores.aluminum_ore": "Aluminum Ore",
   "block.moreores.deepslate_aluminum_ore": "Deepslate Aluminum Ore",
   "block.moreores.aluminum_block": "Block of Aluminum",
-
   "block.moreores.silver_ore": "Silver Ore",
   "block.moreores.deepslate_silver_ore": "Deepslate Silver Ore",
   "block.moreores.silver_block": "Block of Silver",
-
   "block.moreores.tin_ore": "Tin Ore",
   "block.moreores.deepslate_tin_ore": "Deepslate Tin Ore",
   "block.moreores.tin_block": "Block of Tin",
-
   "block.moreores.bronze_block": "Block of Bronze",
   "block.moreores.steel_block": "Block of Steel",
   "block.moreores.copper_alloy_block": "Block of Copper Alloy",
-
   "block.moreores.ruby_block": "Block of Ruby",
   "block.moreores.sapphire_block": "Block of Sapphire",
   "block.moreores.topaz_block": "Block of Topaz",
-
   "block.moreores.ruby_slab": "Ruby Slab",
   "block.moreores.ruby_stairs": "Ruby Stairs",
   "block.moreores.ruby_wall": "Ruby Wall",
-
   "block.moreores.sapphire_slab": "Sapphire Slab",
   "block.moreores.sapphire_stairs": "Sapphire Stairs",
   "block.moreores.sapphire_wall": "Sapphire Wall",
-
   "block.moreores.topaz_slab": "Topaz Slab",
   "block.moreores.topaz_stairs": "Topaz Stairs",
   "block.moreores.topaz_wall": "Topaz Wall",
-
   "block.moreores.titanium_slab": "Titanium Slab",
   "block.moreores.titanium_stairs": "Titanium Stairs",
   "block.moreores.titanium_wall": "Titanium Wall",
-
   "block.moreores.platinum_slab": "Platinum Slab",
   "block.moreores.platinum_stairs": "Platinum Stairs",
   "block.moreores.platinum_wall": "Platinum Wall",
-
   "block.moreores.nickel_slab": "Nickel Slab",
   "block.moreores.nickel_stairs": "Nickel Stairs",
   "block.moreores.nickel_wall": "Nickel Wall",
-
   "block.moreores.aluminum_slab": "Aluminum Slab",
   "block.moreores.aluminum_stairs": "Aluminum Stairs",
   "block.moreores.aluminum_wall": "Aluminum Wall",
-
   "block.moreores.silver_slab": "Silver Slab",
   "block.moreores.silver_stairs": "Silver Stairs",
   "block.moreores.silver_wall": "Silver Wall",
-
   "block.moreores.bronze_slab": "Bronze Slab",
   "block.moreores.bronze_stairs": "Bronze Stairs",
   "block.moreores.bronze_wall": "Bronze Wall",
-
   "block.moreores.steel_slab": "Steel Slab",
   "block.moreores.steel_stairs": "Steel Stairs",
   "block.moreores.steel_wall": "Steel Wall",
-
   "block.moreores.tin_slab": "Tin Slab",
   "block.moreores.tin_stairs": "Tin Stairs",
   "block.moreores.tin_wall": "Tin Wall",
-
   "block.moreores.moon_rock": "Moon Rock",
   "block.moreores.moon_rock_block": "Moon Rock Block",
   "block.moreores.moon_rock_slab": "Moon Rock Slab",
   "block.moreores.moon_rock_stairs": "Moon Rock Stairs",
   "block.moreores.moon_rock_wall": "Moon Rock Wall",
-
   "block.moreores.petrified_oak": "Petrified Oak",
   "block.moreores.petrified_oak_slab": "Petrified Oak Slab",
   "block.moreores.petrified_oak_stairs": "Petrified Oak Stairs",
   "block.moreores.petrified_oak_wall": "Petrified Oak Wall",
-
   "block.moreores.petrified_spruce": "Petrified Spruce",
   "block.moreores.petrified_spruce_slab": "Petrified Spruce Slab",
   "block.moreores.petrified_spruce_stairs": "Petrified Spruce Stairs",
   "block.moreores.petrified_spruce_wall": "Petrified Spruce Wall",
-
   "block.moreores.petrified_birch": "Petrified Birch",
   "block.moreores.petrified_birch_slab": "Petrified Birch Slab",
   "block.moreores.petrified_birch_stairs": "Petrified Birch Stairs",
   "block.moreores.petrified_birch_wall": "Petrified Birch Wall",
-
   "block.moreores.petrified_jungle": "Petrified Jungle Wood",
   "block.moreores.petrified_jungle_slab": "Petrified Jungle Slab",
   "block.moreores.petrified_jungle_stairs": "Petrified Jungle Stairs",
   "block.moreores.petrified_jungle_wall": "Petrified Jungle Wall",
-
   "block.moreores.petrified_acacia": "Petrified Acacia",
   "block.moreores.petrified_acacia_slab": "Petrified Acacia Slab",
   "block.moreores.petrified_acacia_stairs": "Petrified Acacia Stairs",
   "block.moreores.petrified_acacia_wall": "Petrified Acacia Wall",
-
   "block.moreores.petrified_dark_oak": "Petrified Dark Oak",
   "block.moreores.petrified_dark_oak_slab": "Petrified Dark Oak Slab",
   "block.moreores.petrified_dark_oak_stairs": "Petrified Dark Oak Stairs",
   "block.moreores.petrified_dark_oak_wall": "Petrified Dark Oak Wall",
-
   "block.moreores.petrified_mangrove": "Petrified Mangrove",
   "block.moreores.petrified_mangrove_slab": "Petrified Mangrove Slab",
   "block.moreores.petrified_mangrove_stairs": "Petrified Mangrove Stairs",
   "block.moreores.petrified_mangrove_wall": "Petrified Mangrove Wall",
-
   "block.moreores.petrified_cherry": "Petrified Cherry",
   "block.moreores.petrified_cherry_slab": "Petrified Cherry Slab",
   "block.moreores.petrified_cherry_stairs": "Petrified Cherry Stairs",
   "block.moreores.petrified_cherry_wall": "Petrified Cherry Wall",
-
   "block.moreores.oil_fluid": "Oil",
-
   "item.moreores.titanium_raw": "Raw Titanium",
   "item.moreores.titanium_ingot": "Titanium Ingot",
   "item.moreores.titanium_pickaxe": "Titanium Pickaxe",
@@ -137,7 +107,6 @@
   "item.moreores.titanium_chestplate": "Titanium Chestplate",
   "item.moreores.titanium_leggings": "Titanium Leggings",
   "item.moreores.titanium_boots": "Titanium Boots",
-
   "item.moreores.platinum_raw": "Raw Platinum",
   "item.moreores.platinum_ingot": "Platinum Ingot",
   "item.moreores.platinum_pickaxe": "Platinum Pickaxe",
@@ -150,7 +119,6 @@
   "item.moreores.platinum_chestplate": "Platinum Chestplate",
   "item.moreores.platinum_leggings": "Platinum Leggings",
   "item.moreores.platinum_boots": "Platinum Boots",
-
   "item.moreores.nickel_raw": "Raw Nickel",
   "item.moreores.nickel_ingot": "Nickel Ingot",
   "item.moreores.nickel_pickaxe": "Nickel Pickaxe",
@@ -163,7 +131,6 @@
   "item.moreores.nickel_chestplate": "Nickel Chestplate",
   "item.moreores.nickel_leggings": "Nickel Leggings",
   "item.moreores.nickel_boots": "Nickel Boots",
-
   "item.moreores.aluminum_raw": "Raw Aluminum",
   "item.moreores.aluminum_ingot": "Aluminum Ingot",
   "item.moreores.aluminum_pickaxe": "Aluminum Pickaxe",
@@ -176,7 +143,6 @@
   "item.moreores.aluminum_chestplate": "Aluminum Chestplate",
   "item.moreores.aluminum_leggings": "Aluminum Leggings",
   "item.moreores.aluminum_boots": "Aluminum Boots",
-
   "item.moreores.silver_raw": "Raw Silver",
   "item.moreores.silver_ingot": "Silver Ingot",
   "item.moreores.silver_pickaxe": "Silver Pickaxe",
@@ -189,14 +155,12 @@
   "item.moreores.silver_chestplate": "Silver Chestplate",
   "item.moreores.silver_leggings": "Silver Leggings",
   "item.moreores.silver_boots": "Silver Boots",
-
   "item.moreores.tin_raw": "Raw Tin",
   "item.moreores.tin_ingot": "Tin Ingot",
   "item.moreores.tin_pickaxe": "Tin Pickaxe",
   "item.moreores.tin_axe": "Tin Axe",
   "item.moreores.tin_shovel": "Tin Shovel",
   "item.moreores.tin_hoe": "Tin Hoe",
-
   "item.moreores.bronze_ingot": "Bronze Ingot",
   "item.moreores.bronze_pickaxe": "Bronze Pickaxe",
   "item.moreores.bronze_axe": "Bronze Axe",
@@ -208,7 +172,6 @@
   "item.moreores.bronze_chestplate": "Bronze Chestplate",
   "item.moreores.bronze_leggings": "Bronze Leggings",
   "item.moreores.bronze_boots": "Bronze Boots",
-
   "item.moreores.steel_ingot": "Steel Ingot",
   "item.moreores.steel_pickaxe": "Steel Pickaxe",
   "item.moreores.steel_axe": "Steel Axe",
@@ -220,34 +183,29 @@
   "item.moreores.steel_chestplate": "Steel Chestplate",
   "item.moreores.steel_leggings": "Steel Leggings",
   "item.moreores.steel_boots": "Steel Boots",
-
   "item.moreores.copper_alloy_ingot": "Copper Alloy Ingot",
   "item.moreores.copper_alloy_pickaxe": "Copper Alloy Pickaxe",
   "item.moreores.copper_alloy_axe": "Copper Alloy Axe",
   "item.moreores.copper_alloy_shovel": "Copper Alloy Shovel",
   "item.moreores.copper_alloy_hoe": "Copper Alloy Hoe",
-
   "item.moreores.ruby": "Ruby",
   "item.moreores.ruby_dagger": "Ruby Dagger",
   "item.moreores.ruby_helmet": "Ruby Helmet",
   "item.moreores.ruby_chestplate": "Ruby Chestplate",
   "item.moreores.ruby_leggings": "Ruby Leggings",
   "item.moreores.ruby_boots": "Ruby Boots",
-
   "item.moreores.sapphire": "Sapphire",
   "item.moreores.sapphire_dagger": "Sapphire Dagger",
   "item.moreores.sapphire_helmet": "Sapphire Helmet",
   "item.moreores.sapphire_chestplate": "Sapphire Chestplate",
   "item.moreores.sapphire_leggings": "Sapphire Leggings",
   "item.moreores.sapphire_boots": "Sapphire Boots",
-
   "item.moreores.topaz": "Topaz",
   "item.moreores.topaz_dagger": "Topaz Dagger",
   "item.moreores.topaz_helmet": "Topaz Helmet",
   "item.moreores.topaz_chestplate": "Topaz Chestplate",
   "item.moreores.topaz_leggings": "Topaz Leggings",
   "item.moreores.topaz_boots": "Topaz Boots",
-
   "block.moreores.lead_ore": "Lead Ore",
   "block.moreores.deepslate_lead_ore": "Deepslate Lead Ore",
   "block.moreores.lead_block": "Block of Lead",
@@ -266,7 +224,6 @@
   "item.moreores.lead_chestplate": "Lead Chestplate",
   "item.moreores.lead_leggings": "Lead Leggings",
   "item.moreores.lead_boots": "Lead Boots",
-
   "block.moreores.cobalt_ore": "Cobalt Ore",
   "block.moreores.deepslate_cobalt_ore": "Deepslate Cobalt Ore",
   "block.moreores.cobalt_block": "Block of Cobalt",
@@ -285,7 +242,6 @@
   "item.moreores.cobalt_chestplate": "Cobalt Chestplate",
   "item.moreores.cobalt_leggings": "Cobalt Leggings",
   "item.moreores.cobalt_boots": "Cobalt Boots",
-
   "block.moreores.chromium_ore": "Chromium Ore",
   "block.moreores.deepslate_chromium_ore": "Deepslate Chromium Ore",
   "block.moreores.chromium_block": "Block of Chromium",
@@ -303,7 +259,6 @@
   "item.moreores.chromium_chestplate": "Chromium Chestplate",
   "item.moreores.chromium_leggings": "Chromium Leggings",
   "item.moreores.chromium_boots": "Chromium Boots",
-
   "block.moreores.tungsten_ore": "Tungsten Ore",
   "block.moreores.deepslate_tungsten_ore": "Deepslate Tungsten Ore",
   "block.moreores.tungsten_block": "Block of Tungsten",
@@ -316,7 +271,6 @@
   "item.moreores.tungsten_axe": "Tungsten Axe",
   "item.moreores.tungsten_shovel": "Tungsten Shovel",
   "item.moreores.tungsten_hoe": "Tungsten Hoe",
-
   "block.moreores.zinc_ore": "Zinc Ore",
   "block.moreores.deepslate_zinc_ore": "Deepslate Zinc Ore",
   "block.moreores.zinc_block": "Block of Zinc",
@@ -329,7 +283,6 @@
   "item.moreores.zinc_axe": "Zinc Axe",
   "item.moreores.zinc_shovel": "Zinc Shovel",
   "item.moreores.zinc_hoe": "Zinc Hoe",
-
   "block.moreores.manganese_ore": "Manganese Ore",
   "block.moreores.deepslate_manganese_ore": "Deepslate Manganese Ore",
   "block.moreores.manganese_block": "Block of Manganese",
@@ -338,7 +291,6 @@
   "block.moreores.manganese_wall": "Manganese Wall",
   "item.moreores.raw_manganese": "Raw Manganese",
   "item.moreores.manganese_ingot": "Manganese Ingot",
-
   "block.moreores.vanadium_ore": "Vanadium Ore",
   "block.moreores.deepslate_vanadium_ore": "Deepslate Vanadium Ore",
   "block.moreores.vanadium_block": "Block of Vanadium",
@@ -353,7 +305,6 @@
   "item.moreores.vanadium_hoe": "Vanadium Hoe",
   "item.moreores.vanadium_sword": "Vanadium Sword",
   "item.moreores.vanadium_dagger": "Vanadium Dagger",
-
   "block.moreores.uranium_ore": "Uranium Ore",
   "block.moreores.deepslate_uranium_ore": "Deepslate Uranium Ore",
   "block.moreores.uranium_block": "Block of Uranium",
@@ -362,7 +313,6 @@
   "block.moreores.uranium_wall": "Uranium Wall",
   "item.moreores.raw_uranium": "Raw Uranium",
   "item.moreores.uranium_ingot": "Uranium Ingot",
-
   "block.moreores.lithium_ore": "Lithium Ore",
   "block.moreores.deepslate_lithium_ore": "Deepslate Lithium Ore",
   "block.moreores.lithium_block": "Block of Lithium",
@@ -371,7 +321,6 @@
   "block.moreores.lithium_wall": "Lithium Wall",
   "item.moreores.raw_lithium": "Raw Lithium",
   "item.moreores.lithium_ingot": "Lithium Ingot",
-
   "block.moreores.palladium_ore": "Palladium Ore",
   "block.moreores.deepslate_palladium_ore": "Deepslate Palladium Ore",
   "block.moreores.palladium_block": "Block of Palladium",
@@ -390,7 +339,6 @@
   "item.moreores.palladium_chestplate": "Palladium Chestplate",
   "item.moreores.palladium_leggings": "Palladium Leggings",
   "item.moreores.palladium_boots": "Palladium Boots",
-
   "block.moreores.osmium_ore": "Osmium Ore",
   "block.moreores.deepslate_osmium_ore": "Deepslate Osmium Ore",
   "block.moreores.osmium_block": "Block of Osmium",
@@ -399,7 +347,6 @@
   "block.moreores.osmium_wall": "Osmium Wall",
   "item.moreores.raw_osmium": "Raw Osmium",
   "item.moreores.osmium_ingot": "Osmium Ingot",
-
   "block.moreores.iridium_ore": "Iridium Ore",
   "block.moreores.deepslate_iridium_ore": "Deepslate Iridium Ore",
   "block.moreores.iridium_block": "Block of Iridium",
@@ -417,7 +364,6 @@
   "item.moreores.iridium_chestplate": "Iridium Chestplate",
   "item.moreores.iridium_leggings": "Iridium Leggings",
   "item.moreores.iridium_boots": "Iridium Boots",
-
   "block.moreores.bismuth_ore": "Bismuth Ore",
   "block.moreores.bismuth_block": "Block of Bismuth",
   "block.moreores.bismuth_slab": "Bismuth Slab",
@@ -425,7 +371,6 @@
   "block.moreores.bismuth_wall": "Bismuth Wall",
   "item.moreores.raw_bismuth": "Raw Bismuth",
   "item.moreores.bismuth_ingot": "Bismuth Ingot",
-
   "block.moreores.invar_block": "Block of Invar",
   "block.moreores.invar_slab": "Invar Slab",
   "block.moreores.invar_stairs": "Invar Stairs",
@@ -440,7 +385,6 @@
   "item.moreores.invar_chestplate": "Invar Chestplate",
   "item.moreores.invar_leggings": "Invar Leggings",
   "item.moreores.invar_boots": "Invar Boots",
-
   "block.moreores.electrum_block": "Block of Electrum",
   "block.moreores.electrum_slab": "Electrum Slab",
   "block.moreores.electrum_stairs": "Electrum Stairs",
@@ -456,7 +400,6 @@
   "item.moreores.electrum_chestplate": "Electrum Chestplate",
   "item.moreores.electrum_leggings": "Electrum Leggings",
   "item.moreores.electrum_boots": "Electrum Boots",
-
   "block.moreores.rose_gold_block": "Block of Rose Gold",
   "block.moreores.rose_gold_slab": "Rose Gold Slab",
   "block.moreores.rose_gold_stairs": "Rose Gold Stairs",
@@ -468,7 +411,6 @@
   "item.moreores.rose_gold_chestplate": "Rose Gold Chestplate",
   "item.moreores.rose_gold_leggings": "Rose Gold Leggings",
   "item.moreores.rose_gold_boots": "Rose Gold Boots",
-
   "block.moreores.amber_ore": "Amber Ore",
   "block.moreores.amber_block": "Block of Amber",
   "block.moreores.amber_slab": "Amber Slab",
@@ -480,7 +422,6 @@
   "item.moreores.amber_chestplate": "Amber Chestplate",
   "item.moreores.amber_leggings": "Amber Leggings",
   "item.moreores.amber_boots": "Amber Boots",
-
   "block.moreores.jade_ore": "Jade Ore",
   "block.moreores.jade_block": "Block of Jade",
   "block.moreores.jade_slab": "Jade Slab",
@@ -492,7 +433,6 @@
   "item.moreores.jade_chestplate": "Jade Chestplate",
   "item.moreores.jade_leggings": "Jade Leggings",
   "item.moreores.jade_boots": "Jade Boots",
-
   "block.moreores.opal_ore": "Opal Ore",
   "block.moreores.opal_block": "Block of Opal",
   "block.moreores.opal_slab": "Opal Slab",
@@ -504,7 +444,6 @@
   "item.moreores.opal_chestplate": "Opal Chestplate",
   "item.moreores.opal_leggings": "Opal Leggings",
   "item.moreores.opal_boots": "Opal Boots",
-
   "block.moreores.garnet_ore": "Garnet Ore",
   "block.moreores.garnet_block": "Block of Garnet",
   "block.moreores.garnet_slab": "Garnet Slab",
@@ -516,7 +455,6 @@
   "item.moreores.garnet_chestplate": "Garnet Chestplate",
   "item.moreores.garnet_leggings": "Garnet Leggings",
   "item.moreores.garnet_boots": "Garnet Boots",
-
   "block.moreores.peridot_ore": "Peridot Ore",
   "block.moreores.peridot_block": "Block of Peridot",
   "block.moreores.peridot_slab": "Peridot Slab",
@@ -528,7 +466,6 @@
   "item.moreores.peridot_chestplate": "Peridot Chestplate",
   "item.moreores.peridot_leggings": "Peridot Leggings",
   "item.moreores.peridot_boots": "Peridot Boots",
-
   "block.moreores.aquamarine_ore": "Aquamarine Ore",
   "block.moreores.aquamarine_block": "Block of Aquamarine",
   "block.moreores.aquamarine_slab": "Aquamarine Slab",
@@ -540,7 +477,6 @@
   "item.moreores.aquamarine_chestplate": "Aquamarine Chestplate",
   "item.moreores.aquamarine_leggings": "Aquamarine Leggings",
   "item.moreores.aquamarine_boots": "Aquamarine Boots",
-
   "block.moreores.tourmaline_ore": "Tourmaline Ore",
   "block.moreores.tourmaline_block": "Block of Tourmaline",
   "block.moreores.tourmaline_slab": "Tourmaline Slab",
@@ -548,22 +484,17 @@
   "block.moreores.tourmaline_wall": "Tourmaline Wall",
   "item.moreores.tourmaline": "Tourmaline",
   "item.moreores.tourmaline_dagger": "Tourmaline Dagger",
-
   "block.moreores.citrine_ore": "Citrine Ore",
   "block.moreores.citrine_block": "Block of Citrine",
   "block.moreores.citrine_slab": "Citrine Slab",
   "block.moreores.citrine_stairs": "Citrine Stairs",
   "block.moreores.citrine_wall": "Citrine Wall",
   "item.moreores.citrine": "Citrine",
-
   "item.moreores.oil_bucket": "Oil Bucket",
-
   "enchantment.moreores.freeze": "Freeze",
   "enchantment.moreores.penetrating": "Penetrating",
-
   "effect.moreores.frozen": "Frozen",
   "effect.moreores.freeze_immunity": "Freeze Immunity",
-
   "biome.moreores.amethyst_cave": "Amethyst Cave",
   "biome.moreores.ruby_cavern": "Ruby Cavern",
   "biome.moreores.sapphire_grotto": "Sapphire Grotto",
@@ -594,17 +525,13 @@
   "biome.moreores.collapsed_city": "Collapsed City",
   "biome.moreores.deep_dark_extension": "Deep Dark Extension",
   "biome.moreores.void_edge": "Void Edge",
-
   "block.moreores.oil_engine": "Oil Engine",
   "block.moreores.oil_furnace": "Oil Furnace",
   "block.moreores.oil_crusher": "Ore Crusher",
-
   "item.moreores.diamond_minecart": "Diamond Minecart",
   "item.moreores.barrier_boat": "Barrier Boat",
   "item.moreores.golden_apple_juice": "Golden Apple Juice",
-
   "itemGroup.moreores.joke": "Joke Items",
-
   "advancements.moreores.root.title": "More Ores, More Fun",
   "advancements.moreores.root.description": "The underground holds more than you know",
   "advancements.moreores.first_ingot.title": "New Metals",
@@ -622,5 +549,10 @@
   "advancements.moreores.master_smith.title": "Master Smith",
   "advancements.moreores.master_smith.description": "Craft a full set of titanium tools",
   "advancements.moreores.moon_touched.title": "Moon Touched",
-  "advancements.moreores.moon_touched.description": "Pick up a piece of moon rock"
+  "advancements.moreores.moon_touched.description": "Pick up a piece of moon rock",
+  "block.moreores.refinery": "Oil Refinery",
+  "block.moreores.repair_station": "Repair Station",
+  "item.moreores.refined_fuel": "Refined Fuel",
+  "container.moreores.refinery": "Oil Refinery",
+  "container.moreores.repair_station": "Repair Station"
 }

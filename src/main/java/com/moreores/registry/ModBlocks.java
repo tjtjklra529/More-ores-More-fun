@@ -1,8 +1,6 @@
 package com.moreores.registry;
 
-import com.moreores.block.engine.OilCrusherBlock;
-import com.moreores.block.engine.OilEngineBlock;
-import com.moreores.block.engine.OilFurnaceBlock;
+import com.moreores.block.engine.*;
 import com.moreores.fluid.OilFluid;
 import com.moreores.fluid.OilFluidBlock;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
@@ -112,6 +110,14 @@ public class ModBlocks {
                 .strength(3.5f, 6f)
                 .requiresTool()
                 .sounds(BlockSoundGroup.STONE)));
+        register("refinery", new RefineryBlock(FabricBlockSettings.create()
+                .strength(3.5f, 6f)
+                .requiresTool()
+                .sounds(BlockSoundGroup.METAL)));
+        register("repair_station", new RepairStationBlock(FabricBlockSettings.create()
+                .strength(3.5f, 6f)
+                .requiresTool()
+                .sounds(BlockSoundGroup.METAL)));
     }
 
     public static void initialize() {

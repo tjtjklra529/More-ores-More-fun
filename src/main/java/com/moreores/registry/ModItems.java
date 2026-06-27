@@ -24,6 +24,7 @@ public class ModItems {
     }
 
     public static void initialize() {
-        // Items are registered via MaterialRegistry
+        // Items registered via MaterialRegistry; engine fuel item registered here
+        registerSimple("refined_fuel");
     }
 }
