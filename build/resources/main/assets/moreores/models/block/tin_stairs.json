@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "moreores:block/tin_block",
+    "top": "moreores:block/tin_block",
+    "side": "moreores:block/tin_block"
+  }
+}

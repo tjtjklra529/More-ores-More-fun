@@ -1,0 +1,16 @@
+{
+  "mappings": {
+    "com/moreores/mixin/FreezeMixin": {
+      "jump": "Lnet/minecraft/class_1309;method_6043()V",
+      "travel": "Lnet/minecraft/class_1309;method_6091(Lnet/minecraft/class_243;)V"
+    }
+  },
+  "data": {
+    "named:intermediary": {
+      "com/moreores/mixin/FreezeMixin": {
+        "jump": "Lnet/minecraft/class_1309;method_6043()V",
+        "travel": "Lnet/minecraft/class_1309;method_6091(Lnet/minecraft/class_243;)V"
+      }
+    }
+  }
+}

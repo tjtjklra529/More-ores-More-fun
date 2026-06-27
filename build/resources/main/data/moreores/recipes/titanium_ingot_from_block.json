@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "moreores:titanium_block"
+    }
+  ],
+  "result": {
+    "item": "moreores:titanium_ingot",
+    "count": 9
+  }
+}

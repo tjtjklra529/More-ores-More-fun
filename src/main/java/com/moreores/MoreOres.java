@@ -1,8 +1,12 @@
 package com.moreores;
 
 import com.moreores.effect.FrozenEffect;
+import com.moreores.item.joke.BarrierBoatItem;
+import com.moreores.item.joke.DiamondMinecartItem;
+import com.moreores.item.joke.GoldenAppleJuiceItem;
 import com.moreores.material.MaterialRegistry;
 import com.moreores.material.ModMaterials;
+import com.moreores.registry.ModBlockEntities;
 import com.moreores.registry.ModBlocks;
 import com.moreores.registry.ModEnchantments;
 import com.moreores.registry.ModFluids;
@@ -10,7 +14,9 @@ import com.moreores.registry.ModItemGroups;
 import com.moreores.registry.ModItems;
 import com.moreores.world.biome.CaveBiomeFeatures;
 import com.moreores.world.biome.CaveBiomeRegistry;
+import com.moreores.world.gen.CraterGeneration;
 import com.moreores.world.gen.ModOreGeneration;
+import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -33,6 +39,9 @@ public class MoreOres implements ModInitializer {
         // 3. Register the oil fluid block (depends on OilFluid.STILL being set)
         ModBlocks.initialize();
 
+        // 3b. Register block entity types (depends on engine blocks being registered)
+        ModBlockEntities.initialize();
+
         // 4. Register all material-driven items and blocks
         MaterialRegistry.registerAll(ModMaterials.ALL_MATERIALS);
 
@@ -42,6 +51,11 @@ public class MoreOres implements ModInitializer {
         // 6. Register creative tab (depends on all items being registered)
         ModItemGroups.initialize();
 
+        // 5b. Register joke items
+        ModItems.register("diamond_minecart", new DiamondMinecartItem(new FabricItemSettings().maxCount(1)));
+        ModItems.register("barrier_boat", new BarrierBoatItem(new FabricItemSettings().maxCount(1)));
+        ModItems.register("golden_apple_juice", new GoldenAppleJuiceItem(new FabricItemSettings().maxCount(1)));
+
         // 7. Register world generation ore features
         ModOreGeneration.generateOres();
 
@@ -50,6 +64,9 @@ public class MoreOres implements ModInitializer {
 
         // 9. Add bonus ore features to cave biomes via BiomeModifications
         CaveBiomeFeatures.register();
+
+        // 10. Register crater generation
+        CraterGeneration.register();
 
         LOGGER.info("More Ores, More Fun initialized successfully.");
     }

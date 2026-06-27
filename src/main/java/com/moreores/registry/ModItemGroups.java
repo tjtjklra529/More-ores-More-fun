@@ -11,6 +11,7 @@ import net.minecraft.util.Identifier;
 public class ModItemGroups {
 
     public static ItemGroup MAIN_GROUP;
+    public static ItemGroup JOKE_GROUP;
 
     public static void initialize() {
         MAIN_GROUP = FabricItemGroup.builder()
@@ -37,12 +38,12 @@ public class ModItemGroups {
                     addIfPresent(entries, "deepslate_tin_ore");
 
                     // Raw items
-                    addIfPresent(entries, "titanium_raw");
-                    addIfPresent(entries, "platinum_raw");
-                    addIfPresent(entries, "nickel_raw");
-                    addIfPresent(entries, "aluminum_raw");
-                    addIfPresent(entries, "silver_raw");
-                    addIfPresent(entries, "tin_raw");
+                    addIfPresent(entries, "raw_titanium");
+                    addIfPresent(entries, "raw_platinum");
+                    addIfPresent(entries, "raw_nickel");
+                    addIfPresent(entries, "raw_aluminum");
+                    addIfPresent(entries, "raw_silver");
+                    addIfPresent(entries, "raw_tin");
 
                     // Ingots
                     addIfPresent(entries, "titanium_ingot");
@@ -211,10 +212,39 @@ public class ModItemGroups {
 
                     // Fluids / misc
                     addIfPresent(entries, "oil_bucket");
+
+                    // Engine blocks
+                    addIfPresent(entries, "oil_engine");
+                    addIfPresent(entries, "oil_furnace");
+                    addIfPresent(entries, "oil_crusher");
                 })
                 .build();
 
         Registry.register(Registries.ITEM_GROUP, new Identifier("moreores", "main"), MAIN_GROUP);
+
+        // Joke items group (creative only)
+        JOKE_GROUP = FabricItemGroup.builder()
+                .icon(() -> {
+                    net.minecraft.item.Item icon = ModItems.ITEMS.get("diamond_minecart");
+                    if (icon != null) return new ItemStack(icon);
+                    return ItemStack.EMPTY;
+                })
+                .displayName(Text.translatable("itemGroup.moreores.joke"))
+                .entries((context, entries) -> {
+                    addItemIfPresent(entries, "diamond_minecart");
+                    addItemIfPresent(entries, "barrier_boat");
+                    addItemIfPresent(entries, "golden_apple_juice");
+                })
+                .build();
+
+        Registry.register(Registries.ITEM_GROUP, new Identifier("moreores", "joke"), JOKE_GROUP);
+    }
+
+    private static void addItemIfPresent(ItemGroup.Entries entries, String name) {
+        net.minecraft.item.Item item = ModItems.ITEMS.get(name);
+        if (item != null) {
+            entries.add(item);
+        }
     }
 
     private static void addIfPresent(ItemGroup.Entries entries, String name) {

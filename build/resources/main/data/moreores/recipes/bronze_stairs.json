@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "B  ",
+    "BB ",
+    "BBB"
+  ],
+  "key": {
+    "B": {
+      "item": "moreores:bronze_block"
+    }
+  },
+  "result": {
+    "item": "moreores:bronze_stairs",
+    "count": 4
+  }
+}

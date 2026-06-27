@@ -2,7 +2,7 @@ package com.moreores.material;
 
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
-import net.minecraft.tag.BlockTags;
+import net.minecraft.registry.tag.BlockTags;
 
 /**
  * Implements ToolMaterial for a given OreMaterial.

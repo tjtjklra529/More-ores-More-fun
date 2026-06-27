@@ -1,0 +1,27 @@
+{
+  "display": {
+    "icon": {"item": "moreores:ruby"},
+    "title": {"translate": "advancements.moreores.gem_collector.title"},
+    "description": {"translate": "advancements.moreores.gem_collector.description"},
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "moreores:root",
+  "criteria": {
+    "ruby": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {"items": [{"items": ["moreores:ruby"]}]}
+    },
+    "sapphire": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {"items": [{"items": ["moreores:sapphire"]}]}
+    },
+    "topaz": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {"items": [{"items": ["moreores:topaz"]}]}
+    }
+  },
+  "requirements": [["ruby", "sapphire", "topaz"]]
+}

@@ -6,7 +6,7 @@ import com.moreores.registry.ModItems;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
-import net.minecraft.block.BlockSoundGroup;
+import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.item.*;
 import net.minecraft.recipe.Ingredient;
 
@@ -63,9 +63,9 @@ public class MaterialRegistry {
             ModBlocks.registerWall(name + "_wall", hardness, resistance, primarySound);
         }
 
-        // Raw item
+        // Raw item (vanilla convention: raw_titanium, not titanium_raw)
         if (material.hasRawItem()) {
-            ModItems.registerSimple(name + "_raw");
+            ModItems.registerSimple("raw_" + name);
         }
 
         // Ingot or gem

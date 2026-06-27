@@ -1,11 +1,15 @@
 package com.moreores.registry;
 
+import com.moreores.block.engine.OilCrusherBlock;
+import com.moreores.block.engine.OilEngineBlock;
+import com.moreores.block.engine.OilFurnaceBlock;
 import com.moreores.fluid.OilFluid;
 import com.moreores.fluid.OilFluidBlock;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
+import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
@@ -95,7 +99,23 @@ public class ModBlocks {
         registerNoItem("oil_fluid", OIL_FLUID_BLOCK);
     }
 
+    public static void registerEngineBlocks() {
+        register("oil_engine", new OilEngineBlock(FabricBlockSettings.create()
+                .strength(3.5f, 6f)
+                .requiresTool()
+                .sounds(BlockSoundGroup.METAL)));
+        register("oil_furnace", new OilFurnaceBlock(FabricBlockSettings.create()
+                .strength(3.5f, 6f)
+                .requiresTool()
+                .sounds(BlockSoundGroup.STONE)));
+        register("oil_crusher", new OilCrusherBlock(FabricBlockSettings.create()
+                .strength(3.5f, 6f)
+                .requiresTool()
+                .sounds(BlockSoundGroup.STONE)));
+    }
+
     public static void initialize() {
         registerOilFluidBlock();
+        registerEngineBlocks();
     }
 }

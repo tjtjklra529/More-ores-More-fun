@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "B  ",
+    "BB ",
+    "BBB"
+  ],
+  "key": {
+    "B": {
+      "item": "moreores:titanium_block"
+    }
+  },
+  "result": {
+    "item": "moreores:titanium_stairs",
+    "count": 4
+  }
+}

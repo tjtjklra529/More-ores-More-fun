@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "moreores:raw_silver"
+  },
+  "result": "moreores:silver_ingot",
+  "experience": 0.7,
+  "cookingtime": 100
+}

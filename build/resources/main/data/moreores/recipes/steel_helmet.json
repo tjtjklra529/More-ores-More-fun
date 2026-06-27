@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    "I I"
+  ],
+  "key": {
+    "I": {
+      "item": "moreores:steel_ingot"
+    }
+  },
+  "result": {
+    "item": "moreores:steel_helmet",
+    "count": 1
+  }
+}

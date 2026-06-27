@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "moreores:block/petrified_acacia",
+    "top": "moreores:block/petrified_acacia",
+    "side": "moreores:block/petrified_acacia"
+  }
+}

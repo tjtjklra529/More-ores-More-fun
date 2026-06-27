@@ -1,0 +1,35 @@
+{
+  "display": {
+    "icon": {"item": "moreores:titanium_pickaxe"},
+    "title": {"translate": "advancements.moreores.master_smith.title"},
+    "description": {"translate": "advancements.moreores.master_smith.description"},
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "moreores:titanium_knight",
+  "criteria": {
+    "pickaxe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {"items": [{"items": ["moreores:titanium_pickaxe"]}]}
+    },
+    "axe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {"items": [{"items": ["moreores:titanium_axe"]}]}
+    },
+    "shovel": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {"items": [{"items": ["moreores:titanium_shovel"]}]}
+    },
+    "sword": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {"items": [{"items": ["moreores:titanium_sword"]}]}
+    },
+    "hoe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {"items": [{"items": ["moreores:titanium_hoe"]}]}
+    }
+  },
+  "requirements": [["pickaxe", "axe", "shovel", "sword", "hoe"]]
+}

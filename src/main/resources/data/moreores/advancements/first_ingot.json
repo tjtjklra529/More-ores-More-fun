@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {"item": "moreores:titanium_ingot"},
+    "title": {"translate": "advancements.moreores.first_ingot.title"},
+    "description": {"translate": "advancements.moreores.first_ingot.description"},
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "moreores:root",
+  "criteria": {
+    "get_ingot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "moreores:titanium_ingot",
+              "moreores:platinum_ingot",
+              "moreores:nickel_ingot",
+              "moreores:aluminum_ingot",
+              "moreores:silver_ingot",
+              "moreores:tin_ingot",
+              "moreores:bronze_ingot",
+              "moreores:steel_ingot"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

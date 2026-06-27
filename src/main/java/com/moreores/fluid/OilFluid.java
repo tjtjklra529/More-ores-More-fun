@@ -20,7 +20,7 @@ import net.minecraft.world.WorldView;
 /**
  * Oil fluid: black, viscous. Slower spreading than water.
  */
-public abstract class OilFluid extends net.minecraft.fluid.BaseFluid {
+public abstract class OilFluid extends net.minecraft.fluid.FlowableFluid {
 
     public static final Still STILL = new Still();
     public static final Flowing FLOWING = new Flowing();
@@ -77,6 +77,22 @@ public abstract class OilFluid extends net.minecraft.fluid.BaseFluid {
     @Override
     protected ParticleEffect getParticle() {
         return ParticleTypes.DRIPPING_LAVA;
+    }
+
+    @Override
+    public float getBlastResistance() {
+        return 100.0f;
+    }
+
+    @Override
+    public int getTickRate(net.minecraft.world.WorldView world) {
+        return 10;
+    }
+
+    @Override
+    public boolean canBeReplacedWith(FluidState state, net.minecraft.world.BlockView world,
+                                     BlockPos pos, Fluid fluid, Direction direction) {
+        return false;
     }
 
     // --- Still ---

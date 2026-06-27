@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BIB",
+    "SFS",
+    "BIB"
+  ],
+  "key": {
+    "B": {"item": "minecraft:iron_block"},
+    "I": {"item": "minecraft:iron_ingot"},
+    "S": {"item": "minecraft:stone"},
+    "F": {"item": "minecraft:flint"}
+  },
+  "result": {
+    "item": "moreores:oil_crusher",
+    "count": 1
+  }
+}

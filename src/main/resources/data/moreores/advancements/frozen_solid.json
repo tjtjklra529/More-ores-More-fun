@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {"item": "minecraft:ice"},
+    "title": {"translate": "advancements.moreores.frozen_solid.title"},
+    "description": {"translate": "advancements.moreores.frozen_solid.description"},
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "moreores:root",
+  "criteria": {
+    "use_freeze_enchant": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "damage": {
+          "type": {
+            "direct_entity": {
+              "type": "minecraft:player"
+            }
+          }
+        }
+      }
+    }
+  }
+}

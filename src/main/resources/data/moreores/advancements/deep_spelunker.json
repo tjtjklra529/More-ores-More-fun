@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {"item": "minecraft:diamond_pickaxe"},
+    "title": {"translate": "advancements.moreores.deep_spelunker.title"},
+    "description": {"translate": "advancements.moreores.deep_spelunker.description"},
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "moreores:root",
+  "criteria": {
+    "reach_depth": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "position": {
+                "y": {"max": -60}
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}
