@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    "I I",
+    "I I"
+  ],
+  "key": {
+    "I": {
+      "item": "moreores:tanzanite"
+    }
+  },
+  "result": {
+    "item": "moreores:tanzanite_leggings",
+    "count": 1
+  }
+}

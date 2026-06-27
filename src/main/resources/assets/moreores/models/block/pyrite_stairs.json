@@ -1,0 +1,10 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "moreores:block/pyrite_block",
+    "inner": "moreores:block/pyrite_block",
+    "outer": "moreores:block/pyrite_block",
+    "side": "moreores:block/pyrite_block",
+    "top": "moreores:block/pyrite_block"
+  }
+}

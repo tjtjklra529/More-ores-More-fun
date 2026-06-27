@@ -25,6 +25,8 @@
     "moreores:bismuth_ingot",
     "moreores:invar_ingot",
     "moreores:electrum_ingot",
-    "moreores:rose_gold_ingot"
+    "moreores:rose_gold_ingot",
+    "moreores:pyrite_ingot",
+    "moreores:magnetite_ingot"
   ]
 }

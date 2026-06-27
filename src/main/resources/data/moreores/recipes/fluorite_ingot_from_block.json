@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "moreores:fluorite_block"
+    }
+  ],
+  "result": {
+    "item": "moreores:fluorite",
+    "count": 9
+  }
+}

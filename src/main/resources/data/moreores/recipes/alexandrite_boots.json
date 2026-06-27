@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "I I",
+    "I I"
+  ],
+  "key": {
+    "I": {
+      "item": "moreores:alexandrite"
+    }
+  },
+  "result": {
+    "item": "moreores:alexandrite_boots",
+    "count": 1
+  }
+}

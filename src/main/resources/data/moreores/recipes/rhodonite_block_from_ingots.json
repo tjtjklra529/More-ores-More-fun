@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    "III",
+    "III"
+  ],
+  "key": {
+    "I": {
+      "item": "moreores:rhodonite"
+    }
+  },
+  "result": {
+    "item": "moreores:rhodonite_block",
+    "count": 1
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "I  ",
+    "II ",
+    "III"
+  ],
+  "key": {
+    "I": {
+      "item": "moreores:magnetite_ingot"
+    }
+  },
+  "result": {
+    "item": "moreores:magnetite_stairs",
+    "count": 4
+  }
+}

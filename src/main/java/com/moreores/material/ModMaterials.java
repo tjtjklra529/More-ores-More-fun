@@ -428,6 +428,92 @@ public class ModMaterials {
             .toolDurability(150).toolMiningSpeed(4.5f).toolAttackDamage(1.0f).toolEnchantability(12)
             .color(0xF4C040).build();
 
+    // ── New minerals / gems ───────────────────────────────────────────────────
+
+    public static final OreMaterial SULFUR = OreMaterial.builder("sulfur")
+            .miningLevel(1).hardness(2.0f).resistance(3.0f)
+            .with(ORE, GEM, STORAGE_BLOCK)
+            .toolDurability(100).toolMiningSpeed(4.0f).toolAttackDamage(0.5f).toolEnchantability(8)
+            .color(0xE8D44D).build();
+
+    public static final OreMaterial PYRITE = OreMaterial.builder("pyrite")
+            .miningLevel(2).hardness(3.5f).resistance(6.0f)
+            .with(ORE, DEEPSLATE_ORE, RAW_ITEM, INGOT, STORAGE_BLOCK, SWORD, ARMOR, SLABS, STAIRS, WALLS)
+            .armorDurability(16).armorProtection(1, 4, 3, 1).armorToughness(0.0f).armorKnockbackRes(0.0f)
+            .toolDurability(400).toolMiningSpeed(5.5f).toolAttackDamage(1.5f).toolEnchantability(9)
+            .color(0xC8A832).build();
+
+    public static final OreMaterial CINNABAR = OreMaterial.builder("cinnabar")
+            .miningLevel(2).hardness(2.5f).resistance(4.0f)
+            .with(ORE, DEEPSLATE_ORE, GEM, STORAGE_BLOCK)
+            .toolDurability(200).toolMiningSpeed(4.5f).toolAttackDamage(1.0f).toolEnchantability(10)
+            .color(0xCC2200).build();
+
+    public static final OreMaterial FLUORITE = OreMaterial.builder("fluorite")
+            .miningLevel(2).hardness(2.5f).resistance(4.0f)
+            .with(ORE, DEEPSLATE_ORE, GEM, STORAGE_BLOCK)
+            .toolDurability(200).toolMiningSpeed(4.5f).toolAttackDamage(1.0f).toolEnchantability(14)
+            .color(0x9B59B6).build();
+
+    public static final OreMaterial MALACHITE = OreMaterial.builder("malachite")
+            .miningLevel(2).hardness(3.0f).resistance(5.0f)
+            .with(ORE, DEEPSLATE_ORE, GEM, STORAGE_BLOCK)
+            .toolDurability(200).toolMiningSpeed(4.5f).toolAttackDamage(1.0f).toolEnchantability(12)
+            .color(0x2ECC71).build();
+
+    public static final OreMaterial ALEXANDRITE = OreMaterial.builder("alexandrite")
+            .miningLevel(3).hardness(4.5f).resistance(8.0f)
+            .with(ORE, DEEPSLATE_ORE, GEM, STORAGE_BLOCK, SWORD, DAGGER, ARMOR)
+            .armorDurability(24).armorProtection(2, 6, 5, 2).armorToughness(1.0f).armorKnockbackRes(0.0f)
+            .toolDurability(800).toolMiningSpeed(7.0f).toolAttackDamage(2.5f).toolEnchantability(16)
+            .color(0x4CAF50).build();
+
+    public static final OreMaterial TANZANITE = OreMaterial.builder("tanzanite")
+            .miningLevel(3).hardness(4.0f).resistance(7.0f)
+            .with(ORE, DEEPSLATE_ORE, GEM, STORAGE_BLOCK, ARMOR)
+            .armorDurability(22).armorProtection(2, 6, 5, 2).armorToughness(1.0f).armorKnockbackRes(0.0f)
+            .toolDurability(600).toolMiningSpeed(6.5f).toolAttackDamage(2.0f).toolEnchantability(18)
+            .color(0x4A4AA8).build();
+
+    public static final OreMaterial ONYX = OreMaterial.builder("onyx")
+            .miningLevel(2).hardness(4.0f).resistance(7.0f)
+            .with(ORE, DEEPSLATE_ORE, GEM, STORAGE_BLOCK, TOOLS, SWORD, DAGGER, ARMOR, SLABS, STAIRS, WALLS)
+            .armorDurability(20).armorProtection(2, 6, 5, 2).armorToughness(1.0f).armorKnockbackRes(0.0f)
+            .toolDurability(700).toolMiningSpeed(6.5f).toolAttackDamage(2.0f).toolEnchantability(12)
+            .color(0x1A1A1A).build();
+
+    public static final OreMaterial ZIRCON = OreMaterial.builder("zircon")
+            .miningLevel(2).hardness(3.5f).resistance(6.0f)
+            .with(ORE, DEEPSLATE_ORE, GEM, STORAGE_BLOCK, SWORD, DAGGER)
+            .toolDurability(400).toolMiningSpeed(6.0f).toolAttackDamage(1.5f).toolEnchantability(14)
+            .color(0xB0C4DE).build();
+
+    public static final OreMaterial RHODONITE = OreMaterial.builder("rhodonite")
+            .miningLevel(2).hardness(3.0f).resistance(5.0f)
+            .with(ORE, DEEPSLATE_ORE, GEM, STORAGE_BLOCK)
+            .toolDurability(300).toolMiningSpeed(5.5f).toolAttackDamage(1.0f).toolEnchantability(13)
+            .color(0xE75480).build();
+
+    public static final OreMaterial MAGNETITE = OreMaterial.builder("magnetite")
+            .miningLevel(2).hardness(4.0f).resistance(7.0f)
+            .with(ORE, DEEPSLATE_ORE, RAW_ITEM, INGOT, STORAGE_BLOCK, TOOLS, SLABS, STAIRS, WALLS)
+            .toolDurability(700).toolMiningSpeed(7.0f).toolAttackDamage(2.0f).toolEnchantability(10)
+            .color(0x2C2C2C).build();
+
+    public static final OreMaterial MORGANITE = OreMaterial.builder("morganite")
+            .miningLevel(2).hardness(3.5f).resistance(6.0f)
+            .with(ORE, DEEPSLATE_ORE, GEM, STORAGE_BLOCK, ARMOR)
+            .armorDurability(18).armorProtection(2, 5, 4, 2).armorToughness(0.5f).armorKnockbackRes(0.0f)
+            .toolDurability(500).toolMiningSpeed(6.0f).toolAttackDamage(1.5f).toolEnchantability(16)
+            .color(0xF4A0C8).build();
+
+    public static final OreMaterial MOLDAVITE = OreMaterial.builder("moldavite")
+            .miningLevel(3).hardness(5.0f).resistance(9.0f)
+            .with(ORE, GEM, STORAGE_BLOCK, SWORD, DAGGER, ARMOR)
+            .armorDurability(26).armorProtection(3, 7, 5, 3).armorToughness(1.5f).armorKnockbackRes(0.0f)
+            .toolDurability(1000).toolMiningSpeed(8.0f).toolAttackDamage(3.0f).toolEnchantability(20)
+            .color(0x2D8C00).build();
+
     public static final OreMaterial[] ALL_MATERIALS = {
             TITANIUM, PLATINUM, NICKEL, ALUMINUM, SILVER,
             BRONZE, STEEL, TIN, COPPER_ALLOY,
@@ -441,6 +527,10 @@ public class ModMaterials {
             // Alloys
             INVAR, ELECTRUM, ROSE_GOLD,
             // New gems
-            AMBER, JADE, OPAL, GARNET, PERIDOT, AQUAMARINE, TOURMALINE, CITRINE
+            AMBER, JADE, OPAL, GARNET, PERIDOT, AQUAMARINE, TOURMALINE, CITRINE,
+            // New minerals / gems
+            SULFUR, PYRITE, CINNABAR, FLUORITE, MALACHITE,
+            ALEXANDRITE, TANZANITE, ONYX, ZIRCON, RHODONITE,
+            MAGNETITE, MORGANITE, MOLDAVITE
     };
 }

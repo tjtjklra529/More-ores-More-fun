@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "moreores:block/pyrite_slab"
+    },
+    "type=double": {
+      "model": "moreores:block/pyrite_block"
+    },
+    "type=top": {
+      "model": "moreores:block/pyrite_slab_top"
+    }
+  }
+}

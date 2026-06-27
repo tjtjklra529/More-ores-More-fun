@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "I  ",
+    "II ",
+    "III"
+  ],
+  "key": {
+    "I": {
+      "item": "moreores:onyx"
+    }
+  },
+  "result": {
+    "item": "moreores:onyx_stairs",
+    "count": 4
+  }
+}

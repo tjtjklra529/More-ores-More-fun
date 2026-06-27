@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III"
+  ],
+  "key": {
+    "I": {
+      "item": "moreores:pyrite_ingot"
+    }
+  },
+  "result": {
+    "item": "moreores:pyrite_slab",
+    "count": 6
+  }
+}

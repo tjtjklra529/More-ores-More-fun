@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "I I",
+    "I I"
+  ],
+  "key": {
+    "I": {
+      "item": "moreores:onyx"
+    }
+  },
+  "result": {
+    "item": "moreores:onyx_boots",
+    "count": 1
+  }
+}

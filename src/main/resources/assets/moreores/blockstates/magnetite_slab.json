@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "moreores:block/magnetite_slab"
+    },
+    "type=double": {
+      "model": "moreores:block/magnetite_block"
+    },
+    "type=top": {
+      "model": "moreores:block/magnetite_slab_top"
+    }
+  }
+}

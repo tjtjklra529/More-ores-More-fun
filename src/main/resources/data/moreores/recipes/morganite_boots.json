@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "I I",
+    "I I"
+  ],
+  "key": {
+    "I": {
+      "item": "moreores:morganite"
+    }
+  },
+  "result": {
+    "item": "moreores:morganite_boots",
+    "count": 1
+  }
+}

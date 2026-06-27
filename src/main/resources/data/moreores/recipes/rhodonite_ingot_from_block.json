@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "moreores:rhodonite_block"
+    }
+  ],
+  "result": {
+    "item": "moreores:rhodonite",
+    "count": 9
+  }
+}

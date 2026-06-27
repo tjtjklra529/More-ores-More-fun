@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "moreores:block/onyx_slab"
+    },
+    "type=double": {
+      "model": "moreores:block/onyx_block"
+    },
+    "type=top": {
+      "model": "moreores:block/onyx_slab_top"
+    }
+  }
+}
