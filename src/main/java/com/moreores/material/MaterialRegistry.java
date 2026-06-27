@@ -62,6 +62,18 @@ public class MaterialRegistry {
         if (material.hasWalls()) {
             ModBlocks.registerWall(name + "_wall", hardness, resistance, primarySound);
         }
+        if (material.hasDoor()) {
+            ModBlocks.registerDoor(name + "_door", hardness, resistance, primarySound);
+        }
+        if (material.hasTrapdoor()) {
+            ModBlocks.registerTrapdoor(name + "_trapdoor", hardness, resistance, primarySound);
+        }
+        if (material.hasButton()) {
+            ModBlocks.registerButton(name + "_button", primarySound);
+        }
+        if (material.hasPressurePlate()) {
+            ModBlocks.registerPressurePlate(name + "_pressure_plate", 0.5f, primarySound);
+        }
 
         // Raw item (vanilla convention: raw_titanium, not titanium_raw)
         if (material.hasRawItem()) {
