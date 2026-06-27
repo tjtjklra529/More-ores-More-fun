@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab_top",
-  "textures": {
-    "bottom": "moreores:block/topaz_block",
-    "top": "moreores:block/topaz_block",
-    "side": "moreores:block/topaz_block"
-  }
-}

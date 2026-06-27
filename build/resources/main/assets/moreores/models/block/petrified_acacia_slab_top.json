@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab_top",
-  "textures": {
-    "bottom": "moreores:block/petrified_acacia",
-    "top": "moreores:block/petrified_acacia",
-    "side": "moreores:block/petrified_acacia"
-  }
-}

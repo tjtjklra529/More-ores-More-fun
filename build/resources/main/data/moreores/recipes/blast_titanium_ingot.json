@@ -1,9 +1,0 @@
-{
-  "type": "minecraft:blasting",
-  "ingredient": {
-    "item": "moreores:raw_titanium"
-  },
-  "result": "moreores:titanium_ingot",
-  "experience": 0.7,
-  "cookingtime": 100
-}

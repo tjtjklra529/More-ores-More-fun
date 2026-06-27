@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/inner_stairs",
-  "textures": {
-    "bottom": "moreores:block/petrified_acacia",
-    "top": "moreores:block/petrified_acacia",
-    "side": "moreores:block/petrified_acacia"
-  }
-}
