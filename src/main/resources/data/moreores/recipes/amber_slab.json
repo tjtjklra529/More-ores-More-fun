@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BBB"
+  ],
+  "key": {
+    "B": {
+      "item": "moreores:amber_block"
+    }
+  },
+  "result": {
+    "item": "moreores:amber_slab",
+    "count": 6
+  }
+}

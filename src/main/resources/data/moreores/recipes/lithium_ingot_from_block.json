@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "moreores:lithium_block"
+    }
+  ],
+  "result": {
+    "item": "moreores:lithium_ingot",
+    "count": 9
+  }
+}

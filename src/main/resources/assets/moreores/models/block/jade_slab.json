@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "moreores:block/jade_block",
+    "top": "moreores:block/jade_block",
+    "side": "moreores:block/jade_block"
+  }
+}

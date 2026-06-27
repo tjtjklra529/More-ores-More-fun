@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "moreores:block/rose_gold_slab"
+    },
+    "type=top": {
+      "model": "moreores:block/rose_gold_slab_top"
+    },
+    "type=double": {
+      "model": "moreores:block/rose_gold_block"
+    }
+  }
+}

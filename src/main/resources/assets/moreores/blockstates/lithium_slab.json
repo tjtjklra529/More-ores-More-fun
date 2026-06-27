@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "moreores:block/lithium_slab"
+    },
+    "type=top": {
+      "model": "moreores:block/lithium_slab_top"
+    },
+    "type=double": {
+      "model": "moreores:block/lithium_block"
+    }
+  }
+}

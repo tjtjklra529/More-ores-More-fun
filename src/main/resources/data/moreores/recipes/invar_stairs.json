@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "B  ",
+    "BB ",
+    "BBB"
+  ],
+  "key": {
+    "B": {
+      "item": "moreores:invar_block"
+    }
+  },
+  "result": {
+    "item": "moreores:invar_stairs",
+    "count": 4
+  }
+}

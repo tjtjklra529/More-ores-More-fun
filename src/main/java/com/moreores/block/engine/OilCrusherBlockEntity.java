@@ -1,22 +1,29 @@
 package com.moreores.block.engine;
 
 import com.moreores.registry.ModBlockEntities;
+import com.moreores.screen.OilCrusherScreenHandler;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.entity.BlockEntity;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.inventory.SimpleInventory;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.registry.Registries;
+import net.minecraft.screen.NamedScreenHandlerFactory;
+import net.minecraft.screen.ScreenHandler;
+import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.world.World;
+import org.jetbrains.annotations.Nullable;
 
 import java.util.HashMap;
 import java.util.Map;
 
-public class OilCrusherBlockEntity extends BlockEntity {
+public class OilCrusherBlockEntity extends BlockEntity implements NamedScreenHandlerFactory {
 
     public static final int PROCESSING_TICKS = 100;
 
@@ -41,6 +48,17 @@ public class OilCrusherBlockEntity extends BlockEntity {
 
     public OilCrusherBlockEntity(BlockPos pos, BlockState state) {
         super(ModBlockEntities.OIL_CRUSHER, pos, state);
+    }
+
+    @Override
+    public Text getDisplayName() {
+        return Text.translatable("container.moreores.oil_crusher");
+    }
+
+    @Nullable
+    @Override
+    public ScreenHandler createMenu(int syncId, PlayerInventory playerInventory, PlayerEntity player) {
+        return new OilCrusherScreenHandler(syncId, playerInventory, this.inventory);
     }
 
     public static void tick(World world, BlockPos pos, BlockState state, OilCrusherBlockEntity be) {

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "GGG",
+    "GGG",
+    "GGG"
+  ],
+  "key": {
+    "G": {
+      "item": "moreores:garnet"
+    }
+  },
+  "result": {
+    "item": "moreores:garnet_block",
+    "count": 1
+  }
+}

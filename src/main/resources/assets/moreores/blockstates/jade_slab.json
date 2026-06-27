@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "moreores:block/jade_slab"
+    },
+    "type=top": {
+      "model": "moreores:block/jade_slab_top"
+    },
+    "type=double": {
+      "model": "moreores:block/jade_block"
+    }
+  }
+}

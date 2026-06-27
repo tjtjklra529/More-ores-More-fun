@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BBB",
+    "BBB"
+  ],
+  "key": {
+    "B": {
+      "item": "moreores:electrum_block"
+    }
+  },
+  "result": {
+    "item": "moreores:electrum_wall",
+    "count": 6
+  }
+}

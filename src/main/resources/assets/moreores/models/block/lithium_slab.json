@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "moreores:block/lithium_block",
+    "top": "moreores:block/lithium_block",
+    "side": "moreores:block/lithium_block"
+  }
+}

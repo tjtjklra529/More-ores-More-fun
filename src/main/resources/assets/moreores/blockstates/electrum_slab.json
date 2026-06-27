@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "moreores:block/electrum_slab"
+    },
+    "type=top": {
+      "model": "moreores:block/electrum_slab_top"
+    },
+    "type=double": {
+      "model": "moreores:block/electrum_block"
+    }
+  }
+}

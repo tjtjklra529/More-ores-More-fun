@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "I I",
+    "III",
+    "III"
+  ],
+  "key": {
+    "I": {
+      "item": "moreores:chromium_ingot"
+    }
+  },
+  "result": {
+    "item": "moreores:chromium_chestplate",
+    "count": 1
+  }
+}

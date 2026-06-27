@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BBB"
+  ],
+  "key": {
+    "B": {
+      "item": "moreores:tungsten_block"
+    }
+  },
+  "result": {
+    "item": "moreores:tungsten_slab",
+    "count": 6
+  }
+}

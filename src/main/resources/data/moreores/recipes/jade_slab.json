@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BBB"
+  ],
+  "key": {
+    "B": {
+      "item": "moreores:jade_block"
+    }
+  },
+  "result": {
+    "item": "moreores:jade_slab",
+    "count": 6
+  }
+}

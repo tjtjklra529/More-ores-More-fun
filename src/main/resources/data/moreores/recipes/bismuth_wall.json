@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BBB",
+    "BBB"
+  ],
+  "key": {
+    "B": {
+      "item": "moreores:bismuth_block"
+    }
+  },
+  "result": {
+    "item": "moreores:bismuth_wall",
+    "count": 6
+  }
+}

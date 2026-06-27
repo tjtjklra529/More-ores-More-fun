@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "moreores:block/tungsten_slab"
+    },
+    "type=top": {
+      "model": "moreores:block/tungsten_slab_top"
+    },
+    "type=double": {
+      "model": "moreores:block/tungsten_block"
+    }
+  }
+}

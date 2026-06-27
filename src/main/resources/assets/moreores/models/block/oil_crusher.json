@@ -1,7 +1,12 @@
 {
-  "parent": "minecraft:block/cube_column",
+  "parent": "minecraft:block/cube",
   "textures": {
-    "end": "minecraft:block/stone",
-    "side": "minecraft:block/cobblestone"
+    "up": "moreores:block/oil_crusher_top",
+    "down": "moreores:block/oil_crusher_top",
+    "north": "moreores:block/oil_crusher",
+    "south": "moreores:block/oil_crusher",
+    "east": "moreores:block/oil_crusher_side",
+    "west": "moreores:block/oil_crusher_side",
+    "particle": "moreores:block/oil_crusher_side"
   }
 }

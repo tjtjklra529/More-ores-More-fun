@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "moreores:manganese_block"
+    }
+  ],
+  "result": {
+    "item": "moreores:manganese_ingot",
+    "count": 9
+  }
+}

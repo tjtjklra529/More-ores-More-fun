@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "I I",
+    "III",
+    "III"
+  ],
+  "key": {
+    "I": {
+      "item": "moreores:rose_gold_ingot"
+    }
+  },
+  "result": {
+    "item": "moreores:rose_gold_chestplate",
+    "count": 1
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "I",
+    "S"
+  ],
+  "key": {
+    "I": {
+      "item": "moreores:amber"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "moreores:amber_dagger",
+    "count": 1
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "moreores:block/uranium_slab"
+    },
+    "type=top": {
+      "model": "moreores:block/uranium_slab_top"
+    },
+    "type=double": {
+      "model": "moreores:block/uranium_block"
+    }
+  }
+}

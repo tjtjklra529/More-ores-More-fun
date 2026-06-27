@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "I",
+    "S"
+  ],
+  "key": {
+    "I": {
+      "item": "moreores:palladium_ingot"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "moreores:palladium_dagger",
+    "count": 1
+  }
+}

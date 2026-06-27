@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "moreores:block/iridium_block",
+    "top": "moreores:block/iridium_block",
+    "side": "moreores:block/iridium_block"
+  }
+}

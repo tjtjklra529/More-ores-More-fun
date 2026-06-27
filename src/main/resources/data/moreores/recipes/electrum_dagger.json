@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "I",
+    "S"
+  ],
+  "key": {
+    "I": {
+      "item": "moreores:electrum_ingot"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "moreores:electrum_dagger",
+    "count": 1
+  }
+}

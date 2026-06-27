@@ -8,6 +8,7 @@ import com.moreores.material.MaterialRegistry;
 import com.moreores.material.ModMaterials;
 import com.moreores.registry.ModBlockEntities;
 import com.moreores.registry.ModBlocks;
+import com.moreores.screen.ModScreenHandlers;
 import com.moreores.registry.ModEnchantments;
 import com.moreores.registry.ModFluids;
 import com.moreores.registry.ModItemGroups;
@@ -41,6 +42,9 @@ public class MoreOres implements ModInitializer {
 
         // 3b. Register block entity types (depends on engine blocks being registered)
         ModBlockEntities.initialize();
+
+        // 3c. Register screen handlers
+        ModScreenHandlers.initialize();
 
         // 4. Register all material-driven items and blocks
         MaterialRegistry.registerAll(ModMaterials.ALL_MATERIALS);

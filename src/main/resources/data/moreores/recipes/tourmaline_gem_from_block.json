@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "moreores:tourmaline_block"
+    }
+  ],
+  "result": {
+    "item": "moreores:tourmaline",
+    "count": 9
+  }
+}

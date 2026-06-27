@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "moreores:block/opal_block",
+    "top": "moreores:block/opal_block",
+    "side": "moreores:block/opal_block"
+  }
+}

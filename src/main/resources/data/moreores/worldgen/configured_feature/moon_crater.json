@@ -1,0 +1,39 @@
+{
+  "type": "minecraft:geode",
+  "config": {
+    "blocks": {
+      "filling_provider": {"type": "minecraft:simple_state_provider", "state": {"Name": "minecraft:air"}},
+      "inner_layer_provider": {"type": "minecraft:simple_state_provider", "state": {"Name": "moreores:moon_rock"}},
+      "alternate_inner_layer_provider": {"type": "minecraft:simple_state_provider", "state": {"Name": "moreores:moon_rock"}},
+      "middle_layer_provider": {"type": "minecraft:simple_state_provider", "state": {"Name": "moreores:moon_rock"}},
+      "outer_layer_provider": {"type": "minecraft:simple_state_provider", "state": {"Name": "moreores:moon_rock"}},
+      "inner_placements": [
+        {"Name": "moreores:titanium_ore"},
+        {"Name": "moreores:platinum_ore"}
+      ],
+      "cannot_replace": {"type": "minecraft:tag", "id": "minecraft:features_cannot_replace"},
+      "invalid_blocks": {"type": "minecraft:tag", "id": "minecraft:geode_invalid_blocks"}
+    },
+    "layers": {
+      "filling": 1.7,
+      "inner_layer": 2.2,
+      "middle_layer": 3.2,
+      "outer_layer": 4.2
+    },
+    "crack": {
+      "generate_crack_chance": 0.95,
+      "base_crack_size": 2.0,
+      "crack_point_offset": 2
+    },
+    "noise_multiplier": 0.05,
+    "use_potential_placements_chance": 0.35,
+    "use_alternate_layer0_chance": 0.083,
+    "placements_require_layer0_alternate": true,
+    "outer_wall_distance": {"min_inclusive": 4, "max_inclusive": 6},
+    "distribution_points": {"min_inclusive": 3, "max_inclusive": 4},
+    "point_offset": {"min_inclusive": 1, "max_inclusive": 2},
+    "min_gen_offset": -16,
+    "max_gen_offset": 16,
+    "invalid_blocks_threshold": 1
+  }
+}

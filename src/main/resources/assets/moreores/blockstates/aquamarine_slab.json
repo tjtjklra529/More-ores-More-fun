@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "moreores:block/aquamarine_slab"
+    },
+    "type=top": {
+      "model": "moreores:block/aquamarine_slab_top"
+    },
+    "type=double": {
+      "model": "moreores:block/aquamarine_block"
+    }
+  }
+}

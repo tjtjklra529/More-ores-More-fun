@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "moreores:block/amber_slab"
+    },
+    "type=top": {
+      "model": "moreores:block/amber_slab_top"
+    },
+    "type=double": {
+      "model": "moreores:block/amber_block"
+    }
+  }
+}

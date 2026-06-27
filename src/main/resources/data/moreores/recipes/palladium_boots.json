@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "I I",
+    "I I"
+  ],
+  "key": {
+    "I": {
+      "item": "moreores:palladium_ingot"
+    }
+  },
+  "result": {
+    "item": "moreores:palladium_boots",
+    "count": 1
+  }
+}

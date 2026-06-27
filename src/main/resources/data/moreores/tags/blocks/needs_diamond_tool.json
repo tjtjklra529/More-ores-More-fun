@@ -4,6 +4,20 @@
     "moreores:titanium_ore",
     "moreores:platinum_ore",
     "moreores:deepslate_titanium_ore",
-    "moreores:deepslate_platinum_ore"
+    "moreores:deepslate_platinum_ore",
+    "moreores:cobalt_ore",
+    "moreores:deepslate_cobalt_ore",
+    "moreores:vanadium_ore",
+    "moreores:deepslate_vanadium_ore",
+    "moreores:uranium_ore",
+    "moreores:deepslate_uranium_ore",
+    "moreores:palladium_ore",
+    "moreores:deepslate_palladium_ore",
+    "moreores:tungsten_ore",
+    "moreores:deepslate_tungsten_ore",
+    "moreores:osmium_ore",
+    "moreores:deepslate_osmium_ore",
+    "moreores:iridium_ore",
+    "moreores:deepslate_iridium_ore"
   ]
 }

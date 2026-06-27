@@ -9,6 +9,22 @@
     "moreores:bronze_ingot",
     "moreores:steel_ingot",
     "moreores:tin_ingot",
-    "moreores:copper_alloy_ingot"
+    "moreores:copper_alloy_ingot",
+    "moreores:lead_ingot",
+    "moreores:cobalt_ingot",
+    "moreores:chromium_ingot",
+    "moreores:tungsten_ingot",
+    "moreores:zinc_ingot",
+    "moreores:manganese_ingot",
+    "moreores:vanadium_ingot",
+    "moreores:uranium_ingot",
+    "moreores:lithium_ingot",
+    "moreores:palladium_ingot",
+    "moreores:osmium_ingot",
+    "moreores:iridium_ingot",
+    "moreores:bismuth_ingot",
+    "moreores:invar_ingot",
+    "moreores:electrum_ingot",
+    "moreores:rose_gold_ingot"
   ]
 }

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BBB",
+    "BBB"
+  ],
+  "key": {
+    "B": {
+      "item": "moreores:chromium_block"
+    }
+  },
+  "result": {
+    "item": "moreores:chromium_wall",
+    "count": 6
+  }
+}

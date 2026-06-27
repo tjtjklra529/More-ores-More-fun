@@ -1,6 +1,6 @@
 {
   "variants": {
     "lit=false": {"model": "moreores:block/oil_engine"},
-    "lit=true": {"model": "moreores:block/oil_engine_active"}
+    "lit=true":  {"model": "moreores:block/oil_engine_on"}
   }
 }

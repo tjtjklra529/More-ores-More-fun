@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "moreores:block/rose_gold_block",
+    "top": "moreores:block/rose_gold_block",
+    "side": "moreores:block/rose_gold_block"
+  }
+}

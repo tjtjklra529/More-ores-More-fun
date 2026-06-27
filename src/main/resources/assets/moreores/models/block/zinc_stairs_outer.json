@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "moreores:block/zinc_block",
+    "top": "moreores:block/zinc_block",
+    "side": "moreores:block/zinc_block"
+  }
+}

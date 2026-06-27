@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "B  ",
+    "BB ",
+    "BBB"
+  ],
+  "key": {
+    "B": {
+      "item": "moreores:tungsten_block"
+    }
+  },
+  "result": {
+    "item": "moreores:tungsten_stairs",
+    "count": 4
+  }
+}

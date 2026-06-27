@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "moreores:block/aquamarine_block",
+    "top": "moreores:block/aquamarine_block",
+    "side": "moreores:block/aquamarine_block"
+  }
+}

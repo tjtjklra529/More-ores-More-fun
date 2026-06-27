@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "moreores:raw_manganese"
+  },
+  "result": "moreores:manganese_ingot",
+  "experience": 0.7,
+  "cookingtime": 200
+}

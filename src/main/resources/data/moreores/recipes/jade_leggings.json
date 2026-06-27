@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    "I I",
+    "I I"
+  ],
+  "key": {
+    "I": {
+      "item": "moreores:jade"
+    }
+  },
+  "result": {
+    "item": "moreores:jade_leggings",
+    "count": 1
+  }
+}

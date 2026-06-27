@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "GGG",
+    "GGG",
+    "GGG"
+  ],
+  "key": {
+    "G": {
+      "item": "moreores:opal"
+    }
+  },
+  "result": {
+    "item": "moreores:opal_block",
+    "count": 1
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "moreores:block/garnet_block",
+    "top": "moreores:block/garnet_block",
+    "side": "moreores:block/garnet_block"
+  }
+}

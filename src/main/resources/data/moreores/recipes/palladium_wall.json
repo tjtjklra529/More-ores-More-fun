@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BBB",
+    "BBB"
+  ],
+  "key": {
+    "B": {
+      "item": "moreores:palladium_block"
+    }
+  },
+  "result": {
+    "item": "moreores:palladium_wall",
+    "count": 6
+  }
+}

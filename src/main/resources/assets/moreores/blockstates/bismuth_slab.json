@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "moreores:block/bismuth_slab"
+    },
+    "type=top": {
+      "model": "moreores:block/bismuth_slab_top"
+    },
+    "type=double": {
+      "model": "moreores:block/bismuth_block"
+    }
+  }
+}

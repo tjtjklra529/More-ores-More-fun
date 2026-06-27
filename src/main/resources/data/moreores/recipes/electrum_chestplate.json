@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "I I",
+    "III",
+    "III"
+  ],
+  "key": {
+    "I": {
+      "item": "moreores:electrum_ingot"
+    }
+  },
+  "result": {
+    "item": "moreores:electrum_chestplate",
+    "count": 1
+  }
+}

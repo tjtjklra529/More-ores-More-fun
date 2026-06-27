@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "moreores:block/manganese_slab"
+    },
+    "type=top": {
+      "model": "moreores:block/manganese_slab_top"
+    },
+    "type=double": {
+      "model": "moreores:block/manganese_block"
+    }
+  }
+}

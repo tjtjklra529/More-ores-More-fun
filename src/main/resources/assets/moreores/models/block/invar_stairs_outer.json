@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "moreores:block/invar_block",
+    "top": "moreores:block/invar_block",
+    "side": "moreores:block/invar_block"
+  }
+}
