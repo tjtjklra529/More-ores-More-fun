@@ -11,8 +11,8 @@
         {"Name": "moreores:titanium_ore"},
         {"Name": "moreores:platinum_ore"}
       ],
-      "cannot_replace": "minecraft:features_cannot_replace",
-      "invalid_blocks": "minecraft:geode_invalid_blocks"
+      "cannot_replace": "#minecraft:features_cannot_replace",
+      "invalid_blocks": "#minecraft:geode_invalid_blocks"
     },
     "layers": {
       "filling": 1.7,
