@@ -9,6 +9,7 @@
   "environment": "*",
   "entrypoints": {
     "main": ["com.moreores.MoreOres"],
+    "client": ["com.moreores.client.MoreOresClient"],
     "fabric-datagen": ["com.moreores.datagen.ModDatagenMain"]
   },
   "mixins": ["moreores.mixins.json"],

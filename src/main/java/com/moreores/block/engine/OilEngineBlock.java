@@ -57,35 +57,17 @@ public class OilEngineBlock extends BlockWithEntity {
             BlockEntity be = world.getBlockEntity(pos);
             if (be instanceof OilEngineBlockEntity engine) {
                 ItemStack stack = player.getStackInHand(hand);
-                // Check for oil bucket (registered in mod)
-                if (stack.getItem() == Items.BUCKET) {
-                    // Check if it's an oil bucket by checking item tag or name
-                    // We check registry name
-                    String itemId = net.minecraft.registry.Registries.ITEM.getId(stack.getItem()).toString();
-                    if (itemId.equals("moreores:oil_bucket")) {
-                        if (engine.getFuelTicks() < OilEngineBlockEntity.MAX_FUEL) {
-                            engine.addFuel(OilEngineBlockEntity.MAX_FUEL);
-                            if (!player.isCreative()) {
-                                player.setStackInHand(hand, new ItemStack(Items.BUCKET));
-                            }
-                            world.setBlockState(pos, state.with(ACTIVE, true), 3);
-                            return ActionResult.SUCCESS;
+                String itemId = net.minecraft.registry.Registries.ITEM.getId(stack.getItem()).toString();
+                if (itemId.equals("moreores:oil_bucket")) {
+                    if (engine.getFuelTicks() < OilEngineBlockEntity.MAX_FUEL) {
+                        engine.addFuel(OilEngineBlockEntity.MAX_FUEL);
+                        if (!player.isCreative()) {
+                            player.setStackInHand(hand, new ItemStack(Items.BUCKET));
                         }
+                        world.setBlockState(pos, state.with(ACTIVE, true), 3);
+                        return ActionResult.SUCCESS;
                     }
-                } else {
-                    // Try to match oil bucket by name
-                    String itemId = net.minecraft.registry.Registries.ITEM.getId(stack.getItem()).toString();
-                    if (itemId.equals("moreores:oil_bucket")) {
-                        if (engine.getFuelTicks() < OilEngineBlockEntity.MAX_FUEL) {
-                            engine.addFuel(OilEngineBlockEntity.MAX_FUEL);
-                            if (!player.isCreative()) {
-                                player.setStackInHand(hand, new ItemStack(Items.BUCKET));
-                            }
-                            world.setBlockState(pos, state.with(ACTIVE, true), 3);
-                            return ActionResult.SUCCESS;
-                        }
-                        return ActionResult.CONSUME;
-                    }
+                    return ActionResult.CONSUME;
                 }
             }
         }
