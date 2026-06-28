@@ -110,7 +110,7 @@ public abstract class OilFluid extends net.minecraft.fluid.FlowableFluid {
 
         @Override
         protected void appendProperties(StateManager.Builder<Fluid, FluidState> builder) {
-            // No extra properties for still fluid
+            super.appendProperties(builder);
         }
     }
 
