@@ -4,6 +4,7 @@ import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
 import net.minecraft.world.biome.Biome;
+import net.minecraft.world.biome.source.util.MultiNoiseUtil;
 
 /**
  * Declares {@link RegistryKey} constants for all 30 custom cave biomes.
@@ -121,7 +122,73 @@ public class CaveBiomeRegistry {
      * available for feature-registration code that runs immediately after.
      */
     public static void register() {
-        // Static field initialisation (triggered by class-load above) is
-        // sufficient. Biome objects come from the worldgen data-pack JSONs.
+        // Inject each cave biome into the overworld MultiNoiseBiomeSource.
+        // Parameters: temperature, humidity, continentalness, erosion, depth, weirdness (each as [min,max] range)
+        // All underground biomes use depth > 0.2; spread across unique temp/humidity zones.
+        // Weirdness is left open (-1..1) so they appear regardless of terrain weirdness.
+
+        // CRYSTAL / GEM CAVES — shallow underground, varied temperatures
+        add(AMETHYST_CAVE,         -0.7f,-0.3f,  0.1f, 0.5f,  0.0f, 0.4f,  -0.1f, 0.5f,  0.2f, 0.5f);
+        add(RUBY_CAVERN,            0.4f, 0.8f, -0.3f, 0.1f,  0.0f, 0.4f,  -0.1f, 0.5f, -0.4f, 0.0f);
+        add(SAPPHIRE_GROTTO,       -0.9f,-0.5f, -0.4f, 0.0f,  0.0f, 0.4f,  -0.3f, 0.3f,  0.0f, 0.4f);
+        add(TOPAZ_HOLLOW,           0.2f, 0.6f,  0.2f, 0.6f,  0.0f, 0.4f,   0.1f, 0.5f, -0.2f, 0.2f);
+        add(CRYSTAL_PALACE,        -0.4f, 0.0f, -0.1f, 0.3f,  0.2f, 0.6f,  -0.4f, 0.0f,  0.2f, 0.6f);
+
+        // ORE CAVES — mid-depth, moderate values
+        add(TITANIUM_VEIN,         -0.2f, 0.2f, -0.2f, 0.2f,  0.2f, 0.6f,  -0.2f, 0.2f, -0.2f, 0.2f);
+        add(PLATINUM_LODE,          0.1f, 0.5f, -0.1f, 0.3f,  0.2f, 0.6f,   0.1f, 0.5f,  0.0f, 0.4f);
+        add(NICKEL_SEAM,            0.3f, 0.7f, -0.3f, 0.1f,  0.2f, 0.6f,   0.0f, 0.4f,  0.2f, 0.6f);
+        add(SILVER_MINE,           -0.6f,-0.2f,  0.0f, 0.4f,  0.2f, 0.6f,  -0.3f, 0.1f, -0.5f,-0.1f);
+        add(TIN_SHAFT,              0.5f, 0.9f,  0.1f, 0.5f,  0.2f, 0.6f,  -0.4f, 0.0f,  0.4f, 0.8f);
+
+        // ORGANIC CAVES — warm and humid shallow areas
+        add(FUNGAL_FOREST,          0.2f, 0.6f,  0.5f, 0.9f,  0.0f, 0.4f,  -0.2f, 0.2f, -0.6f,-0.2f);
+        add(MOSS_CAVERN,            0.0f, 0.4f,  0.4f, 0.8f,  0.0f, 0.4f,  -0.4f, 0.0f, -0.4f, 0.0f);
+        add(ROOT_CAVE,              0.1f, 0.5f,  0.6f, 1.0f,  0.0f, 0.4f,   0.0f, 0.4f, -0.8f,-0.4f);
+        add(BIOLUMINESCENT_GROTTO, -0.3f, 0.1f,  0.3f, 0.7f,  0.2f, 0.6f,  -0.5f,-0.1f, -0.2f, 0.2f);
+
+        // GEOLOGICAL CAVES — cool and dry
+        add(LIMESTONE_CAVERN,      -0.4f, 0.0f, -0.9f,-0.5f,  0.2f, 0.6f,  -0.4f, 0.0f,  0.4f, 0.8f);
+        add(MARBLE_HALL,           -0.6f,-0.2f, -0.8f,-0.4f,  0.2f, 0.6f,  -0.6f,-0.2f,  0.6f, 1.0f);
+        add(SLATE_CORRIDOR,        -0.1f, 0.3f, -0.7f,-0.3f,  0.2f, 0.6f,  -0.2f, 0.2f,  0.2f, 0.6f);
+        add(GRANITE_DOME,          -0.2f, 0.2f, -0.6f,-0.2f,  0.2f, 0.6f,   0.0f, 0.4f,  0.0f, 0.4f);
+
+        // VOLCANIC CAVES — hot, deep
+        add(MAGMA_CHAMBER,          0.6f, 1.0f, -0.4f, 0.0f,  0.5f, 0.9f,  -0.3f, 0.1f,  0.5f, 0.9f);
+        add(SULFUR_VENTS,           0.5f, 0.9f,  0.2f, 0.6f,  0.5f, 0.9f,  -0.1f, 0.3f,  0.3f, 0.7f);
+        add(BASALT_CAVERN,          0.4f, 0.8f, -0.2f, 0.2f,  0.5f, 0.9f,   0.2f, 0.6f,  0.6f, 1.0f);
+        add(OBSIDIAN_VAULT,         0.7f, 1.0f,  0.4f, 0.8f,  0.7f, 1.0f,   0.4f, 0.8f,  0.6f, 1.0f);
+
+        // FLUID CAVES — medium depth
+        add(OIL_RESERVOIR,          0.0f, 0.4f, -0.3f, 0.1f,  0.2f, 0.6f,   0.3f, 0.7f, -0.7f,-0.3f);
+        add(BRINE_POOL,            -0.5f,-0.1f, -0.5f,-0.1f,  0.2f, 0.6f,   0.4f, 0.8f, -0.9f,-0.5f);
+        add(FLOODED_CAVERN,        -0.7f,-0.3f,  0.4f, 0.8f,  0.2f, 0.6f,   0.5f, 0.9f, -1.0f,-0.6f);
+
+        // RUIN CAVES — mid-deep, inland
+        add(ANCIENT_MINE,          -0.1f, 0.3f, -0.2f, 0.2f,  0.4f, 0.8f,  -0.8f,-0.4f,  0.0f, 0.4f);
+        add(LOST_VAULT,            -0.3f, 0.1f, -0.1f, 0.3f,  0.4f, 0.8f,  -1.0f,-0.6f,  0.0f, 0.4f);
+        add(COLLAPSED_CITY,         0.1f, 0.5f,  0.0f, 0.4f,  0.4f, 0.8f,  -0.9f,-0.5f,  0.2f, 0.6f);
+
+        // DEEP ZONE — very deep
+        add(DEEP_DARK_EXTENSION,   -0.6f, 0.6f, -0.6f, 0.6f,  0.7f, 1.0f,  -0.6f, 0.6f, -0.6f, 0.6f);
+        add(VOID_EDGE,             -1.0f, 1.0f, -1.0f, 1.0f,  0.9f, 1.0f,  -1.0f, 1.0f, -1.0f, 1.0f);
+    }
+
+    // temp, humidity, continentalness, erosion, depth — each as [min, max]
+    private static void add(RegistryKey<Biome> key,
+                             float tMin, float tMax,
+                             float hMin, float hMax,
+                             float cMin, float cMax,
+                             float eMin, float eMax,
+                             float dMin, float dMax) {
+        OverworldCaveBiomeData.addCaveBiome(key, MultiNoiseUtil.createNoiseHypercube(
+                MultiNoiseUtil.ParameterRange.of(tMin, tMax),  // temperature
+                MultiNoiseUtil.ParameterRange.of(hMin, hMax),  // humidity
+                MultiNoiseUtil.ParameterRange.of(cMin, cMax),  // continentalness
+                MultiNoiseUtil.ParameterRange.of(eMin, eMax),  // erosion
+                MultiNoiseUtil.ParameterRange.of(dMin, dMax),  // depth
+                MultiNoiseUtil.ParameterRange.of(-1.0f, 1.0f), // weirdness (any)
+                0.0f                                            // offset
+        ));
     }
 }
