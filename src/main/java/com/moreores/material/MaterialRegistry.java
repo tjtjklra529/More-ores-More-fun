@@ -51,7 +51,7 @@ public class MaterialRegistry {
         }
 
         // Building shapes (use mainBlock as base for stairs)
-        Block baseBlock = mainBlock != null ? mainBlock : new Block(FabricBlockSettings.create().strength(hardness, resistance));
+        Block baseBlock = mainBlock != null ? mainBlock : net.minecraft.block.Blocks.STONE;
 
         if (material.hasSlabs()) {
             ModBlocks.registerSlab(name + "_slab", hardness, resistance, primarySound);
