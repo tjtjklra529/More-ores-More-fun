@@ -109,6 +109,11 @@ public abstract class OilFluid extends net.minecraft.fluid.FlowableFluid {
         }
 
         @Override
+        public boolean isEmpty() {
+            return false;
+        }
+
+        @Override
         protected void appendProperties(StateManager.Builder<Fluid, FluidState> builder) {
             super.appendProperties(builder);
         }
