@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "moreores:tourmaline_ore"
+  },
+  "result": "moreores:tourmaline",
+  "experience": 0.7,
+  "cookingtime": 100
+}

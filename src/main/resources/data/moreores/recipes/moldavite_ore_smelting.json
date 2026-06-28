@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "moreores:moldavite_ore"
+  },
+  "result": "moreores:moldavite",
+  "experience": 0.7,
+  "cookingtime": 200
+}

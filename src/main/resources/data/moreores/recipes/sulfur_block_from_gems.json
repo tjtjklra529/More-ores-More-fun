@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    "III",
+    "III"
+  ],
+  "key": {
+    "I": {
+      "item": "moreores:sulfur"
+    }
+  },
+  "result": {
+    "item": "moreores:sulfur_block",
+    "count": 1
+  }
+}

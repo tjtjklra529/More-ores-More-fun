@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "moreores:magnetite_ore"
+  },
+  "result": "moreores:magnetite_ingot",
+  "experience": 0.7,
+  "cookingtime": 200
+}

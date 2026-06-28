@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "moreores:morganite_ore"
+  },
+  "result": "moreores:morganite",
+  "experience": 0.7,
+  "cookingtime": 100
+}

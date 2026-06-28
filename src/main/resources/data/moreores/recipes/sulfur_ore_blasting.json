@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "moreores:sulfur_ore"
+  },
+  "result": "moreores:sulfur",
+  "experience": 0.7,
+  "cookingtime": 100
+}

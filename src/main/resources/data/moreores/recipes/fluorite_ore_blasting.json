@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "moreores:fluorite_ore"
+  },
+  "result": "moreores:fluorite",
+  "experience": 0.7,
+  "cookingtime": 100
+}

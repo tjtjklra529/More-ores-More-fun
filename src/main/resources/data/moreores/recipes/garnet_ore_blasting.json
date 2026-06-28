@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "moreores:garnet_ore"
+  },
+  "result": "moreores:garnet",
+  "experience": 0.7,
+  "cookingtime": 100
+}

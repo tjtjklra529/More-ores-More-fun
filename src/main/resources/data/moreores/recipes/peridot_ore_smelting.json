@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "moreores:peridot_ore"
+  },
+  "result": "moreores:peridot",
+  "experience": 0.7,
+  "cookingtime": 200
+}

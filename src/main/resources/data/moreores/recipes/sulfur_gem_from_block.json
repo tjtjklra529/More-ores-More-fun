@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "moreores:sulfur_block"
+    }
+  ],
+  "result": {
+    "item": "moreores:sulfur",
+    "count": 9
+  }
+}

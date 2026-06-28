@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "moreores:onyx_ore"
+  },
+  "result": "moreores:onyx",
+  "experience": 0.7,
+  "cookingtime": 200
+}

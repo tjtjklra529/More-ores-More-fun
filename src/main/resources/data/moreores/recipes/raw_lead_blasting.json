@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "moreores:raw_lead"
+  },
+  "result": "moreores:lead_ingot",
+  "experience": 0.7,
+  "cookingtime": 100
+}

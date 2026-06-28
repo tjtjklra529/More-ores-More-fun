@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "moreores:malachite_ore"
+  },
+  "result": "moreores:malachite",
+  "experience": 0.7,
+  "cookingtime": 100
+}

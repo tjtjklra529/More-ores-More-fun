@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "moreores:citrine_ore"
+  },
+  "result": "moreores:citrine",
+  "experience": 0.7,
+  "cookingtime": 100
+}

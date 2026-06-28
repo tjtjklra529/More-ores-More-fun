@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "moreores:cinnabar_ore"
+  },
+  "result": "moreores:cinnabar",
+  "experience": 0.7,
+  "cookingtime": 100
+}

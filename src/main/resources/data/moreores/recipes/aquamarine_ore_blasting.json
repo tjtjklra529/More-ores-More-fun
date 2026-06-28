@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "moreores:aquamarine_ore"
+  },
+  "result": "moreores:aquamarine",
+  "experience": 0.7,
+  "cookingtime": 100
+}

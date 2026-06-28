@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "moreores:zircon_ore"
+  },
+  "result": "moreores:zircon",
+  "experience": 0.7,
+  "cookingtime": 100
+}

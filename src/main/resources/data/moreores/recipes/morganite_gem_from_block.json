@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "moreores:morganite_block"
+    }
+  ],
+  "result": {
+    "item": "moreores:morganite",
+    "count": 9
+  }
+}

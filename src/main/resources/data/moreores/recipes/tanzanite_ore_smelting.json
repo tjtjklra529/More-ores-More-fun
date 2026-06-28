@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "moreores:tanzanite_ore"
+  },
+  "result": "moreores:tanzanite",
+  "experience": 0.7,
+  "cookingtime": 200
+}
