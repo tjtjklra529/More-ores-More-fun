@@ -114,7 +114,7 @@ public class ModMaterials {
             .hardness(5.0f).resistance(9.0f)
             .with(INGOT, STORAGE_BLOCK,
                     TOOLS, SWORD, DAGGER, ARMOR,
-                    SLABS, STAIRS, WALLS)
+                    SLABS, STAIRS, WALLS, PRESSURE_PLATE)
             .armorDurability(25)
             .armorProtection(3, 7, 5, 2)
             .armorToughness(1.5f)
@@ -204,63 +204,63 @@ public class ModMaterials {
     public static final OreMaterial MOON_ROCK = OreMaterial.builder("moon_rock")
             .miningLevel(2)
             .hardness(4.0f).resistance(8.0f)
-            .with(STORAGE_BLOCK, SLABS, STAIRS, WALLS)
+            .with(STORAGE_BLOCK, SLABS, STAIRS, WALLS, DOOR, TRAPDOOR, BUTTON, PRESSURE_PLATE)
             .color(0xC8C8D0)
             .build();
 
     public static final OreMaterial PETRIFIED_OAK = OreMaterial.builder("petrified_oak")
             .miningLevel(1)
             .hardness(4.0f).resistance(8.0f)
-            .with(STORAGE_BLOCK, SLABS, STAIRS, WALLS)
+            .with(STORAGE_BLOCK, SLABS, STAIRS, WALLS, DOOR, TRAPDOOR, BUTTON, PRESSURE_PLATE)
             .color(0x7A5C3A)
             .build();
 
     public static final OreMaterial PETRIFIED_SPRUCE = OreMaterial.builder("petrified_spruce")
             .miningLevel(1)
             .hardness(4.0f).resistance(8.0f)
-            .with(STORAGE_BLOCK, SLABS, STAIRS, WALLS)
+            .with(STORAGE_BLOCK, SLABS, STAIRS, WALLS, DOOR, TRAPDOOR, BUTTON, PRESSURE_PLATE)
             .color(0x5C4228)
             .build();
 
     public static final OreMaterial PETRIFIED_BIRCH = OreMaterial.builder("petrified_birch")
             .miningLevel(1)
             .hardness(4.0f).resistance(8.0f)
-            .with(STORAGE_BLOCK, SLABS, STAIRS, WALLS)
+            .with(STORAGE_BLOCK, SLABS, STAIRS, WALLS, DOOR, TRAPDOOR, BUTTON, PRESSURE_PLATE)
             .color(0xD4C9A8)
             .build();
 
     public static final OreMaterial PETRIFIED_JUNGLE = OreMaterial.builder("petrified_jungle")
             .miningLevel(1)
             .hardness(4.0f).resistance(8.0f)
-            .with(STORAGE_BLOCK, SLABS, STAIRS, WALLS)
+            .with(STORAGE_BLOCK, SLABS, STAIRS, WALLS, DOOR, TRAPDOOR, BUTTON, PRESSURE_PLATE)
             .color(0x8B5E3C)
             .build();
 
     public static final OreMaterial PETRIFIED_ACACIA = OreMaterial.builder("petrified_acacia")
             .miningLevel(1)
             .hardness(4.0f).resistance(8.0f)
-            .with(STORAGE_BLOCK, SLABS, STAIRS, WALLS)
+            .with(STORAGE_BLOCK, SLABS, STAIRS, WALLS, DOOR, TRAPDOOR, BUTTON, PRESSURE_PLATE)
             .color(0xBA6337)
             .build();
 
     public static final OreMaterial PETRIFIED_DARK_OAK = OreMaterial.builder("petrified_dark_oak")
             .miningLevel(1)
             .hardness(4.0f).resistance(8.0f)
-            .with(STORAGE_BLOCK, SLABS, STAIRS, WALLS)
+            .with(STORAGE_BLOCK, SLABS, STAIRS, WALLS, DOOR, TRAPDOOR, BUTTON, PRESSURE_PLATE)
             .color(0x3B2A1A)
             .build();
 
     public static final OreMaterial PETRIFIED_MANGROVE = OreMaterial.builder("petrified_mangrove")
             .miningLevel(1)
             .hardness(4.0f).resistance(8.0f)
-            .with(STORAGE_BLOCK, SLABS, STAIRS, WALLS)
+            .with(STORAGE_BLOCK, SLABS, STAIRS, WALLS, DOOR, TRAPDOOR, BUTTON, PRESSURE_PLATE)
             .color(0x7D2C2C)
             .build();
 
     public static final OreMaterial PETRIFIED_CHERRY = OreMaterial.builder("petrified_cherry")
             .miningLevel(1)
             .hardness(4.0f).resistance(8.0f)
-            .with(STORAGE_BLOCK, SLABS, STAIRS, WALLS)
+            .with(STORAGE_BLOCK, SLABS, STAIRS, WALLS, DOOR, TRAPDOOR, BUTTON, PRESSURE_PLATE)
             .color(0xE8B4C8)
             .build();
 
@@ -477,7 +477,7 @@ public class ModMaterials {
 
     public static final OreMaterial ONYX = OreMaterial.builder("onyx")
             .miningLevel(2).hardness(4.0f).resistance(7.0f)
-            .with(ORE, DEEPSLATE_ORE, GEM, STORAGE_BLOCK, TOOLS, SWORD, DAGGER, ARMOR, SLABS, STAIRS, WALLS)
+            .with(ORE, DEEPSLATE_ORE, GEM, STORAGE_BLOCK, TOOLS, SWORD, DAGGER, ARMOR, SLABS, STAIRS, WALLS, DOOR, TRAPDOOR)
             .armorDurability(20).armorProtection(2, 6, 5, 2).armorToughness(1.0f).armorKnockbackRes(0.0f)
             .toolDurability(700).toolMiningSpeed(6.5f).toolAttackDamage(2.0f).toolEnchantability(12)
             .color(0x1A1A1A).build();

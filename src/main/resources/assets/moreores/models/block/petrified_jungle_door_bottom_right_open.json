@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_bottom_right_open",
+  "textures": {
+    "bottom": "moreores:block/petrified_jungle",
+    "top": "moreores:block/petrified_jungle"
+  }
+}

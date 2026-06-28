@@ -109,13 +109,14 @@ public class ModBlocks {
         return trapdoor;
     }
 
-    public static StoneButtonBlock registerButton(String name, BlockSoundGroup sound) {
-        StoneButtonBlock button = new StoneButtonBlock(FabricBlockSettings.create()
+    public static ButtonBlock registerButton(String name, BlockSoundGroup sound) {
+        ButtonBlock button = new ButtonBlock(FabricBlockSettings.create()
                 .strength(0.5f)
                 .noCollision()
                 .sounds(sound),
                 BlockSetType.STONE,
-                20);
+                20,
+                false);
         register(name, button);
         return button;
     }

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BBB",
+    "BBB"
+  ],
+  "key": {
+    "B": {
+      "item": "moreores:petrified_oak"
+    }
+  },
+  "result": {
+    "item": "moreores:petrified_oak_trapdoor",
+    "count": 2
+  }
+}

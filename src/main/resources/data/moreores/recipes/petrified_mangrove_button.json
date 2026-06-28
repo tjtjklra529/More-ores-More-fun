@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "moreores:petrified_mangrove"
+    }
+  ],
+  "result": {
+    "item": "moreores:petrified_mangrove_button",
+    "count": 1
+  }
+}

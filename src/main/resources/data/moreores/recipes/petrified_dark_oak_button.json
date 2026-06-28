@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "moreores:petrified_dark_oak"
+    }
+  ],
+  "result": {
+    "item": "moreores:petrified_dark_oak_button",
+    "count": 1
+  }
+}

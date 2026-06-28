@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_bottom_right",
+  "textures": {
+    "bottom": "moreores:block/onyx_block",
+    "top": "moreores:block/onyx_block"
+  }
+}

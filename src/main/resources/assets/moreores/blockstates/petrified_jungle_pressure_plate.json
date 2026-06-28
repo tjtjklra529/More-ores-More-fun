@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "moreores:block/petrified_jungle_pressure_plate"
+    },
+    "powered=true": {
+      "model": "moreores:block/petrified_jungle_pressure_plate_down"
+    }
+  }
+}

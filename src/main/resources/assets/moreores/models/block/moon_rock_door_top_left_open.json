@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_top_left_open",
+  "textures": {
+    "bottom": "moreores:block/moon_rock",
+    "top": "moreores:block/moon_rock"
+  }
+}

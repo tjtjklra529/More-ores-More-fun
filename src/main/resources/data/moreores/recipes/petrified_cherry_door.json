@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BB",
+    "BB",
+    "BB"
+  ],
+  "key": {
+    "B": {
+      "item": "moreores:petrified_cherry"
+    }
+  },
+  "result": {
+    "item": "moreores:petrified_cherry_door",
+    "count": 3
+  }
+}

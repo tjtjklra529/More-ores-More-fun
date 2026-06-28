@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_top_left_open",
+  "textures": {
+    "bottom": "moreores:block/petrified_acacia",
+    "top": "moreores:block/petrified_acacia"
+  }
+}

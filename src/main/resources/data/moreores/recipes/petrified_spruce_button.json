@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "moreores:petrified_spruce"
+    }
+  ],
+  "result": {
+    "item": "moreores:petrified_spruce_button",
+    "count": 1
+  }
+}
