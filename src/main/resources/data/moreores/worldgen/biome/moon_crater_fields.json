@@ -1,0 +1,50 @@
+{
+  "has_precipitation": false,
+  "temperature": 0.0,
+  "downfall": 0.0,
+  "effects": {
+    "sky_color": 7372800,
+    "fog_color": 13158608,
+    "water_color": 4159204,
+    "water_fog_color": 329011,
+    "grass_color": 9211020,
+    "foliage_color": 8882056
+  },
+  "spawners": {
+    "monster": [
+      {"type": "minecraft:zombie", "weight": 95, "minCount": 4, "maxCount": 4},
+      {"type": "minecraft:creeper", "weight": 100, "minCount": 4, "maxCount": 4},
+      {"type": "minecraft:skeleton", "weight": 100, "minCount": 4, "maxCount": 4},
+      {"type": "minecraft:spider", "weight": 100, "minCount": 4, "maxCount": 4},
+      {"type": "minecraft:enderman", "weight": 10, "minCount": 1, "maxCount": 4}
+    ],
+    "creature": [],
+    "ambient": [],
+    "underground_water_creature": [],
+    "water_creature": [],
+    "water_ambient": [],
+    "misc": [],
+    "axolotls": []
+  },
+  "spawn_costs": {},
+  "features": [
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [
+      "minecraft:ore_coal_upper",
+      "minecraft:ore_iron_upper",
+      "minecraft:ore_iron_middle",
+      "minecraft:ore_gold_lower",
+      "minecraft:ore_gravel"
+    ],
+    [],
+    [],
+    [],
+    []
+  ],
+  "carvers": {}
+}

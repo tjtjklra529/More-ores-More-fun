@@ -15,6 +15,7 @@ import com.moreores.registry.ModItemGroups;
 import com.moreores.registry.ModItems;
 import com.moreores.world.biome.CaveBiomeFeatures;
 import com.moreores.world.biome.CaveBiomeRegistry;
+import com.moreores.world.biome.OverworldBiomeRegistry;
 import com.moreores.world.gen.CraterGeneration;
 import com.moreores.world.gen.ModOreGeneration;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
@@ -65,6 +66,9 @@ public class MoreOres implements ModInitializer {
 
         // 8. Register cave biome keys (data-driven via worldgen JSON)
         CaveBiomeRegistry.register();
+
+        // 8b. Register overworld surface biome keys (data-driven via worldgen JSON)
+        OverworldBiomeRegistry.register();
 
         // 9. Add bonus ore features to cave biomes via BiomeModifications
         CaveBiomeFeatures.register();

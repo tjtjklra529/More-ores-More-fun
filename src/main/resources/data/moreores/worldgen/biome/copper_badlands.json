@@ -1,0 +1,53 @@
+{
+  "has_precipitation": false,
+  "temperature": 2.0,
+  "downfall": 0.0,
+  "effects": {
+    "sky_color": 7254015,
+    "fog_color": 13266462,
+    "water_color": 4341118,
+    "water_fog_color": 329011,
+    "grass_color": 9470285,
+    "foliage_color": 9745229
+  },
+  "spawners": {
+    "monster": [
+      {"type": "minecraft:zombie", "weight": 95, "minCount": 4, "maxCount": 4},
+      {"type": "minecraft:creeper", "weight": 100, "minCount": 4, "maxCount": 4},
+      {"type": "minecraft:skeleton", "weight": 100, "minCount": 4, "maxCount": 4},
+      {"type": "minecraft:spider", "weight": 100, "minCount": 4, "maxCount": 4},
+      {"type": "minecraft:husk", "weight": 80, "minCount": 4, "maxCount": 4}
+    ],
+    "creature": [],
+    "ambient": [],
+    "underground_water_creature": [],
+    "water_creature": [],
+    "water_ambient": [],
+    "misc": [],
+    "axolotls": []
+  },
+  "spawn_costs": {},
+  "features": [
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [
+      "minecraft:ore_coal_upper",
+      "minecraft:ore_iron_upper",
+      "minecraft:ore_gold_lower",
+      "minecraft:ore_gold_badlands",
+      "minecraft:ore_gravel"
+    ],
+    [],
+    [],
+    [
+      "minecraft:patch_dead_bush",
+      "minecraft:patch_dead_bush_badlands"
+    ],
+    []
+  ],
+  "carvers": {}
+}
